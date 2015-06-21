@@ -42,6 +42,9 @@
         }
     })
 
+    // Tracking scroll depth
+    $.scrollDepth();
+
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
