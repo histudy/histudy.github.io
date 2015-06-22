@@ -1,0 +1,24 @@
+{
+  "name": "histudy.github.io",
+  "version": "1.0.0",
+  "description": "Himeji IT Study",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "browser-sync": "^2.7.12",
+    "run-sequence": "^1.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/histudy/histudy.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/histudy/histudy.github.io/issues"
+  },
+  "homepage": "http://histudy.github.io/"
+}
