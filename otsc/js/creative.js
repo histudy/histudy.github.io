@@ -43,10 +43,14 @@
     })
 
     // Tracking scroll depth
-    $.scrollDepth();
-	$('.portfolio-box').on('click', function (e) {
-		e.preventDefault();
-	});
+    $.scrollDepth({
+      elements: ['#about', '#summary', '#atmosphere', '#services', '#afterparty', '#contact'],
+      percentage: true
+    });
+
+  	$('.portfolio-box').on('click', function (e) {
+  		e.preventDefault();
+  	});
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
