@@ -48,9 +48,9 @@
       percentage: true
     });
 
-  	$('.portfolio-box').on('click', function (e) {
-  		e.preventDefault();
-  	});
+    $('.portfolio-box').on('click', function (e) {
+      e.preventDefault();
+    });
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
