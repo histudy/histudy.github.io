@@ -2,6 +2,5 @@
 title: {{ title }}
 date: {{ date }}
 categories:
-- news
-- event
+  - 開催履歴
 ---

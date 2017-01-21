@@ -1,6 +1,6 @@
 ---
 title: {{ title }}
 categories:
-- news
-- event
+  - お知らせ
+  - 開催履歴
 ---
