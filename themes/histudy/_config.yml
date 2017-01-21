@@ -1,0 +1,58 @@
+# Menus
+menu:
+    Home: /
+    # Delete this row if you don't want categories in your header nav bar
+    Categories:
+    About: /about/
+    OTSC: /otsc/
+
+# Customize
+customize:
+    logo:
+        width: 320
+        height: 60
+        url:
+    theme_color: '#006bde'
+    highlight: androidstudio
+    sidebar: right # sidebar position, options: left, right
+    thumbnail: true # enable posts thumbnail, options: true, false
+    favicon: # path to favicon
+    social_links: # for more icons, please see http://fontawesome.io/icons/#brand
+        twitter: https://twitter.com/himeji_study/
+        facebook: https://www.facebook.com/groups/301986313162703/
+        google-plus: https://plus.google.com/u/1/communities/110336533733492102004/
+        github: https://github.com/histudy/
+        rss: /
+
+# Widgets
+widgets:
+    - recent_posts
+    - category
+
+# Search
+search:
+    insight: true # you need to install `hexo-generator-json-content` before using Insight Search
+    swiftype: # enter swiftype install key here
+    baidu: # you need to disable other search engines to use Baidu search, options: true, false
+
+# Comment
+comment:
+    disqus: # enter disqus shortname here
+    duoshuo: # enter duoshuo shortname here
+    youyan: # enter youyan uid here
+
+# Share
+share: addtoany # options: jiathis, bdshare, addtoany, default
+
+# Plugins
+plugins:
+    lightgallery: true # options: true, false
+    google_analytics: UA-39104128-5
+    baidu_analytics: # enter Baidu Analytics hash key
+
+# Miscellaneous
+miscellaneous:
+    open_graph: # see http://ogp.me
+        fb_app_id:
+        fb_admins:
+        twitter_id:
