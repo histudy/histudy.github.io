@@ -22,12 +22,13 @@ customize:
         facebook: https://www.facebook.com/groups/301986313162703/
         google-plus: https://plus.google.com/u/1/communities/110336533733492102004/
         github: https://github.com/histudy/
-        rss: /
+        rss: /atom.xml
 
 # Widgets
 widgets:
     - recent_posts
     - category
+    - tag
 
 # Search
 search:
