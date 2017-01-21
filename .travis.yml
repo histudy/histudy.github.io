@@ -17,9 +17,6 @@ branches:
   only:
     - develop
 
-
-
-
 env:
   global:
   - COMMIT_AUTHOR_EMAIL: "pc.poisoning@gmail.com"
