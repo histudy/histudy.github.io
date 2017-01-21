@@ -15,11 +15,11 @@ script:
 
 branches:
   only:
-    - master
+    - develop
 
 env:
   global:
   - COMMIT_AUTHOR_EMAIL: "pc.poisoning@gmail.com"
   - GH_ACOUNT: histudy
   - GH_REPO: histudy.github.io
-  - GH_BRANCH: gh-pages
+  - GH_BRANCH: master

@@ -65,7 +65,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: jekyll-theme-slate
+theme: histudy
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -73,4 +73,4 @@ deploy:
   type: git
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
   repo: git@github.com:histudy/histudy.github.io.git
-  branch: gh-pages
+  branch: master
