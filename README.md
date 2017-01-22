@@ -14,7 +14,7 @@ Hexoをインストールします。
 
 このリポジトリをクローンします。
 
-    $ git clone https://github.com/histudy/website.git
+    $ git clone https://github.com/histudy/histudy.github.io
 
 クローンしたリポジトリに必要なパッケージをインストールします。
 
@@ -50,6 +50,32 @@ npm run generate
 ```
 npm run deploy
 ```
+
+こんなときは
+--------------------------------------------
+
+### hexoを実行しようとすると、「no method 'find'」というエラーが発生する
+
+nodejsのバージョンが古いため、findメソッドが未実装のバージョンがインストールされている可能性があります。
+
+```
+nodejs -v
+```
+
+apt-getからは、古いバージョンのnodejsがインストールされてしまう可能性があるため、v4またはv6をインストールしてください。
+
+* v4をインストールする場合
+
+```
+sudo curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
+```
+
+* v6をインストールする場合
+
+```
+sudo curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
+```
+
 
 検討課題
 --------------------------------------------
