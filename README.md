@@ -67,7 +67,7 @@ apt-getからは、古いバージョンのnodejsがインストールされて�
 * v4をインストールする場合
 
 ```
-sudo curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
+sudo curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -
 ```
 
 * v6をインストールする場合
