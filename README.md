@@ -1,6 +1,8 @@
 Himeji IT Study Meeting
 =======================
 
+[![Build Status](https://travis-ci.org/histudy/histudy.github.io.svg?branch=develop)](https://travis-ci.org/histudy/histudy.github.io)
+
 テスト方法
 --------------------------------------------
 
