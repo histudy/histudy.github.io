@@ -10,7 +10,7 @@ script:
 - npm run generate
 deploy:
   provider: script
-  skip_cleanup: false
+  skip_cleanup: true
   script: deploy.sh
   on:
     branch: develop
