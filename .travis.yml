@@ -1,25 +1,21 @@
 language: node_js
-
 node_js:
-  - "6"
-
+- '6'
 cache:
   directories:
-    - node_modules
+  - node_modules
 install:
-  - npm install
-
+- npm install
 script:
-  - npm run generate
-  - bash deploy.sh
-
+- npm run generate
+- bash deploy.sh
 branches:
   only:
-    - develop
-
+  - develop
 env:
   global:
-  - COMMIT_AUTHOR_EMAIL: "pc.poisoning@gmail.com"
+  - COMMIT_AUTHOR_EMAIL: pc.poisoning@gmail.com
   - GH_ACOUNT: histudy
   - GH_REPO: histudy.github.io
   - GH_BRANCH: master
+  - secure: n/4XBeuoy/ODT4EioCVNpLDa4qFjavf52OIDRHRCpLG8H81IvB29812am3DXxiI6m/YTTTj0l/61JEINv6ac2wgHLnRayrBhq5wNR19uaLidR3IrB0kaFgFPS5zJCTEagc7Tt8wPoDnIlSQe8or5qac+duYSrUXL/e351Du9ldqG5xoZc0F1Ww0dhvSTTkYl9hBGCbzU8bB2wV60OwnfcJF/pL02WYH1QPRIMJQV9yJb7lv1l2xj3KmnRRV+JcTTD4HEivMyXfUm3GnZgKc7Rp5eWOC3Qx0g4WZjYcTGUYg/Sd4lRbbhlDPY8pVfnAkA54Ihv4y9J0Dosuss3Ejcl/VR0ryYMy1MwYywXeBt5mJlhM21JiK9wpIvHFZDua/UdX6aBlkzacqQ+xouW9PjPNVXTVpdJsX+/zcEzkwuv2/aaYr9Q5+7axEvreM0P0orZjGHv7rNQBJCk6yuARLGpQprng1gKefKFLlUB39WyZHlkllW5E+ynDN4CIoTgZ/6/WiBG4orIo/RUIn26vYJz+tVE/RtT/wIBV+/KlehEzoFIFAAxG+lAvYsFhEM3gqibWjpnf1mmPpULM/UkW/2MEno5lkLcXmPebYS+I+q2DLNegfk8rZSWikC04VCBdbxpASFWpzC0twYNeHHVHfBqMihlHi2ADaFR3GgS0nHABU=
