@@ -6,7 +6,7 @@ mkdir .deploy_git
 cd .deploy_git
 git init
 git config user.name "Travis CI"
-git config user.email "$COMMIT_AUTHOR_EMAIL"
+git config user.email "info@mail.histudy.jp"
 touch placeholder
 git add -A
 git commit -m "First commit"
@@ -15,4 +15,4 @@ cp -R ../public/* ./
 git add -A
 COMMIT_MESSAGE=$(date "+Site updated: %Y-%m-%d %H:%M:%S")
 git commit -m "$COMMIT_MESSAGE"
-git push -u https://${GH_TOKEN}@github.com/${GH_ACOUNT}/${GH_REPO}.git HEAD:${GH_BRANCH} --force --quiet >/dev/null 2>&1
+git push -u https://github.com/histudy/histudy.github.io.git HEAD:master --force --quiet >/dev/null 2>&1
