@@ -1,0 +1,3279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>姫路IT系勉強会</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://histudy.github.io/"/>
+  <updated>2018-02-17T15:53:38.000Z</updated>
+  <id>https://histudy.github.io/</id>
+  
+  <author>
+    <name>姫路IT系勉強会</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>姫路IT系勉強会 2018.02</title>
+    <link href="https://histudy.github.io/2018/02/17/histudy/2018/02/"/>
+    <id>https://histudy.github.io/2018/02/17/histudy/2018/02/</id>
+    <published>2018-02-16T15:00:00.000Z</published>
+    <updated>2018-02-17T15:53:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="姫路IT系勉強会-2018-02"><a href="#姫路IT系勉強会-2018-02" class="headerlink" title="姫路IT系勉強会 2018.02"></a>姫路IT系勉強会 2018.02</h1><ul>
+<li>開催日：2018/02/17</li>
+<li>司会：wateさん</li>
+<li>参加者数：参加者:  6名 / 学生:  2名 / Hangout:  0名</li>
+<li>hackMd: <a href="https://hackmd.io/s/ryn-NHerz" target="_blank" rel="external">https://hackmd.io/s/ryn-NHerz</a></li>
+<li>connpass: <a href="https://histudy.connpass.com/event/79069/" target="_blank" rel="external">https://histudy.connpass.com/event/79069/</a></li>
+<li>ハッシュタグ：#histudy<ul>
+<li><a href="https://twitter.com/search?q=%23histudy&amp;src=typd" target="_blank" rel="external">#histudy - Twitter検索</a></li>
+</ul>
+</li>
+<li>備考： ご自由にご記入ください！！</li>
+</ul>
+<h1 id="自己紹介"><a href="#自己紹介" class="headerlink" title="自己紹介"></a>自己紹介</h1><ul>
+<li>ともかく忙しい。青色申告とか韓国とか</li>
+<li>PHPハマっています</li>
+<li>IPv4でNATの後ろでも、実はIPv6で素通しです。ファイアウォールかけなければ</li>
+<li>最近はExcelをWordにする仕事ばかりです</li>
+<li>MacでExcelつらいです。Windows以前からあるのに</li>
+<li>自宅でもWindowsが不調です</li>
+<li>CakePHPなどやっています</li>
+<li>もとぺちぱーです。最近Ansibleしか書いていません</li>
+<li>肩書はフルスタックエンジニアでどうですか</li>
+<li>こないだのOSC大阪でLT司会などやりました</li>
+<li>いるやんの後輩の後輩です<h1 id="発表"><a href="#発表" class="headerlink" title="発表"></a>発表</h1><h2 id="14-00"><a href="#14-00" class="headerlink" title="14:00"></a>14:00</h2><ul>
+<li><a href="http://histudy.jp/" target="_blank" rel="external">http://histudy.jp/</a> 確認してください</li>
+<li>CakePHPについて教えてください(詳細質問あり)</li>
+<li>CakePHP <a href="https://cakephp.org/jp" target="_blank" rel="external">https://cakephp.org/jp</a><ul>
+<li>CakePHPは規約にそっていると簡単につくれる</li>
+</ul>
+</li>
+<li>ログイン認証がちょっと特殊な場合<ul>
+<li><a href="https://qiita.com/HorieH/items/f37a70a35103de6c6a1b" target="_blank" rel="external">https://qiita.com/HorieH/items/f37a70a35103de6c6a1b</a></li>
+<li>ACL(アクセス・コントロール・リスト)</li>
+<li>/admin/ と /member/login で切り分けては</li>
+<li>認証コンポーネント <a href="https://book.cakephp.org/3.0/ja/controllers/components/authentication.html" target="_blank" rel="external">https://book.cakephp.org/3.0/ja/controllers/components/authentication.html</a><ul>
+<li>管理者とユーザーのテーブルを区別して渡せていない?</li>
+</ul>
+</li>
+<li>認証はきちんと設計しないと後が面倒</li>
+<li>フレームワークや規模によってベストなものは違ってくる</li>
+</ul>
+</li>
+<li>behaviorって何<ul>
+<li>WordPressのフックみたいなもの?</li>
+<li>JavaScriptのイベント?</li>
+</ul>
+</li>
+<li>使い方<ul>
+<li>何らかのふるまい・イベントに自動で何かをやるためのもの?</li>
+<li>ユニークなキーの自動生成とか、更新日時とか、連動機能とか、例外処理とか</li>
+</ul>
+</li>
+<li>メリット・デメリット<ul>
+<li>分離しやすい=疎結合になる</li>
+<li>あとでオンオフするなど</li>
+<li>バラバラになる可能性</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>アプリをつかって、SSHでトンネルできない(Windowsクライアント)</p>
+<ul>
+<li>GoogleリモートデスクトップはGoogleをプロキシにしたような構成</li>
+<li>こちらとか? <a href="https://yuu.nkjmlab.org/diary/20110103.html" target="_blank" rel="external">https://yuu.nkjmlab.org/diary/20110103.html</a></li>
+<li>標準RDPとOpenSSHではWindows Home非対応? <a href="http://playing-engineer.com/wordpress/2007/12/17/openssh-for-windows%E3%81%A8rdp/" target="_blank" rel="external">http://playing-engineer.com/wordpress/2007/12/17/openssh-for-windows%E3%81%A8rdp/</a><ul>
+<li>GitHub - stascorp/rdpwrap: RDP Wrapper Library <a href="https://github.com/stascorp/rdpwrap" target="_blank" rel="external">https://github.com/stascorp/rdpwrap</a></li>
+</ul>
+</li>
+<li>ルータに手を入れられるならVPNが楽?<ul>
+<li>フレッツ光のルータはVPN使えます</li>
+</ul>
+</li>
+<li>ちょっとファイルが要るとかいった用途ならVNCで十分では</li>
+<li>Virtualboxにもリモートデスクトップ機能ありますよ</li>
+</ul>
+</li>
+<li><p>yoctoでOpencocon系ディストリを作りたい</p>
+<ul>
+<li>XP時代のPC再利用</li>
+<li>coconならしまださんに聞いてみましょう<ul>
+<li>東海道らぐMLかmastdonで</li>
+<li>SHIMADA Hirofumi - :don: <a href="https://mstdn.maud.io/@shimada" target="_blank" rel="external">https://mstdn.maud.io/@shimada</a></li>
+</ul>
+</li>
+<li>(以下脱線いろいろありました…)</li>
+<li>LTSPというのもあるよ<ul>
+<li>Linux Terminal Server Project - Welcome to LTSP.org <a href="http://www.ltsp.org/" target="_blank" rel="external">http://www.ltsp.org/</a></li>
+</ul>
+</li>
+<li>Debianの自動インストール(preseed)ドキュメント<ul>
+<li><a href="https://www.debian.org/releases/stable/s390x/apb.html.ja" target="_blank" rel="external">https://www.debian.org/releases/stable/s390x/apb.html.ja</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>バイナリを目で読めるようになりたいんです</p>
+<ul>
+<li><a href="https://www.slideshare.net/murachue/grep-8132856" target="_blank" rel="external">https://www.slideshare.net/murachue/grep-8132856</a> でもどーぞ</li>
+<li>セキュリティ屋なら役に立ちそう<ul>
+<li><a href="https://twitter.com/tetsutalow/status/940003008573620225" target="_blank" rel="external">https://twitter.com/tetsutalow/status/940003008573620225</a></li>
+</ul>
+</li>
+<li>Binary Hacks(2006年刊) <a href="https://www.oreilly.co.jp/books/4873112885/" target="_blank" rel="external">https://www.oreilly.co.jp/books/4873112885/</a></li>
+</ul>
+</li>
+<li><p>青色申告のはなし</p>
+<ul>
+<li>今年度から自営業はじめました</li>
+<li>白か青の申告を選択します</li>
+<li>青は記帳義務めんどくさいかわりに控除効きます</li>
+<li>日々の取引を記録します</li>
+<li>某ソリマチの記帳めんどくさいです。クラウドソリューションもいまいちでした</li>
+<li>GNUCashで還付金がっぽりです(←違うよ!)<ul>
+<li>簿記の知識なくてもOKです</li>
+<li>余計な機能がないので超おすすめ</li>
+<li>科目のテンプレはダウンロードできます<ul>
+<li>GnuCash に勘定科目を登録する - GNU の青色申告 <a href="https://gnucash.jp/register-accounts-to-gnucash.html" target="_blank" rel="external">https://gnucash.jp/register-accounts-to-gnucash.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>個人事業主になって初めて青色申告をすることになったのでメモとTips, レイアウトを崩さずPDFをテキストデータに変換するにはpoppler-utils付属のpdftotextを使う - Days of Speed(2018-02-12) <a href="http://www.nofuture.tv/diary/20180212.html" target="_blank" rel="external">http://www.nofuture.tv/diary/20180212.html</a></li>
+<li>プロプラの体験版超使いにくいです</li>
+<li>特にMacは…</li>
+<li>簿記なんて所詮RDBです。簡単でしょ?</li>
+<li>国税庁の記帳指導は無料です</li>
+</ul>
+</li>
+<li>姫路IT系勉強会のサイトをつくる話<ul>
+<li>Ansibleで管理してるよ</li>
+<li>histudy/infra あたりの話ひとくさり <a href="https://github.com/histudy/infra" target="_blank" rel="external">https://github.com/histudy/infra</a></li>
+<li>「なぜDebianなのですか」「信者ではありませんが、満場一致で可決しました」</li>
+<li>「なぜCentOSじゃないのですか」「つらいからです」</li>
+<li>READMEなどの文書をチェックしてプルリクしよう。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;姫路IT系勉強会-2018-02&quot;&gt;&lt;a href=&quot;#姫路IT系勉強会-2018-02&quot; class=&quot;headerlink&quot; title=&quot;姫路IT系勉強会 2018.02&quot;&gt;&lt;/a&gt;姫路IT系勉強会 2018.02&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;開催日：2018
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="姫路IT系勉強会" scheme="https://histudy.github.io/tags/%E5%A7%AB%E8%B7%AFIT%E7%B3%BB%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加古川IT系インフラ勉強会 2018.02</title>
+    <link href="https://histudy.github.io/2018/02/10/kakogawa_infra/2018/02/"/>
+    <id>https://histudy.github.io/2018/02/10/kakogawa_infra/2018/02/</id>
+    <published>2018-02-09T15:00:00.000Z</published>
+    <updated>2018-02-17T15:51:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="加古川IT系インフラ勉強会-2018-02"><a href="#加古川IT系インフラ勉強会-2018-02" class="headerlink" title="加古川IT系インフラ勉強会 2018.02"></a>加古川IT系インフラ勉強会 2018.02</h1><ul>
+<li>開催日：2018/02/10</li>
+<li>司会：wate</li>
+<li>参加者数：参加者: 3名 / 学生:  名 / Hangout:  名</li>
+<li>備考：気付いたことなど、自由に記入をお願いします！</li>
+<li>Connpass: <a href="https://connpass.com/event/79068/" target="_blank" rel="external">https://connpass.com/event/79068/</a></li>
+<li>ハッシュタグ：#kakogawa_infra<ul>
+<li><a href="https://twitter.com/search?q=%23kakogawa_infra&amp;src=typd" target="_blank" rel="external">#kakogawa_infra - Twitter検索</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>人数が少なかったのでDebianインストール祭りをする！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;加古川IT系インフラ勉強会-2018-02&quot;&gt;&lt;a href=&quot;#加古川IT系インフラ勉強会-2018-02&quot; class=&quot;headerlink&quot; title=&quot;加古川IT系インフラ勉強会 2018.02&quot;&gt;&lt;/a&gt;加古川IT系インフラ勉強会 2018.02&lt;/
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="加古川IT系インフラ勉強会" scheme="https://histudy.github.io/tags/%E5%8A%A0%E5%8F%A4%E5%B7%9DIT%E7%B3%BB%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>姫路IT系勉強会 2018.01</title>
+    <link href="https://histudy.github.io/2018/01/20/histudy/2018/01/"/>
+    <id>https://histudy.github.io/2018/01/20/histudy/2018/01/</id>
+    <published>2018-01-19T15:00:00.000Z</published>
+    <updated>2018-02-17T15:53:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="姫路IT系勉強会-2018-01"><a href="#姫路IT系勉強会-2018-01" class="headerlink" title="姫路IT系勉強会 2018.01"></a>姫路IT系勉強会 2018.01</h1><ul>
+<li>開催日：2018/01/20</li>
+<li>司会：wateさん</li>
+<li>参加者数：参加者: 11名 / 学生: 2名 / Hangout: 1名</li>
+<li>hackMd: <a href="https://hackmd.io/s/ryn-NHerz" target="_blank" rel="external">https://hackmd.io/s/ryn-NHerz</a></li>
+<li>connpass: <a href="https://histudy.connpass.com/event/76791/" target="_blank" rel="external">https://histudy.connpass.com/event/76791/</a></li>
+<li>ハッシュタグ：#histudy<ul>
+<li><a href="https://twitter.com/search?q=%23histudy&amp;src=typd" target="_blank" rel="external">#histudy - Twitter検索</a></li>
+</ul>
+</li>
+<li>備考： ご自由にご記入ください！！</li>
+</ul>
+<h1 id="自己紹介"><a href="#自己紹介" class="headerlink" title="自己紹介"></a>自己紹介</h1><h1 id="発表"><a href="#発表" class="headerlink" title="発表"></a>発表</h1><h2 id="13-50"><a href="#13-50" class="headerlink" title="13:50"></a>13:50</h2><h3 id="会計報告"><a href="#会計報告" class="headerlink" title="会計報告"></a>会計報告</h3><ul>
+<li>姫路IT系勉強会、加古川インフラ勉強会<ul>
+<li>赤字にはなっていない</li>
+<li>電子マネーはマダマダ</li>
+<li>集計が手作業なのがつらい<ul>
+<li><a href="https://gnucash.org/index.phtml?lang=ja_JP" target="_blank" rel="external">GnuCash</a><ul>
+<li>GnuCashの利点は複式簿記で、会計ファイルを共有しているとAndroidでも使える<ul>
+<li><a href="https://togetter.com/li/846601" target="_blank" rel="external">オタクのための家計簿講座 - Togetter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://www.timakai.com" target="_blank" rel="external">ちまたの会計</a></li>
+</ul>
+</li>
+<li>参加人数などをAPIでとりたい</li>
+<li>ドメインはとれた</li>
+</ul>
+</li>
+</ul>
+<h3 id="ITエンジニア1年目にやること"><a href="#ITエンジニア1年目にやること" class="headerlink" title="ITエンジニア1年目にやること"></a>ITエンジニア1年目にやること</h3><ul>
+<li>ラズベリーパイをかったりした。</li>
+<li>セキュリティキャンプに参加した。</li>
+<li>KVMにも参加した。</li>
+<li>Linuxに慣れる<ul>
+<li>退路をたつため、macOSを消しましょう。</li>
+<li>まずは谷底に叩き落しましょう<ul>
+<li>himeji kowai<ul>
+<li>怖くないよ!</li>
+</ul>
+</li>
+<li>ディストリビューションを比べよう<ul>
+<li>CentOS<ul>
+<li>情報が多いけど古い情報も残っている</li>
+<li>パッケージが古い</li>
+</ul>
+</li>
+<li>Fedora<ul>
+<li>サポートが短い</li>
+<li>最先端過ぎて情報が無い</li>
+</ul>
+</li>
+<li>Ubuntu<ul>
+<li>ユーザーが多い</li>
+<li>Ubuntu18.04がもうすぐ来るよ！</li>
+<li>17.10.1 → 18.04のアップグレードは体験すべきかも<ul>
+<li>まあ壊れるやろ</li>
+<li>ちゃんとdo-release-upgradeコマンド使ってください。で、問題があればlaunchpadへGO!(人柱として)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Arch<ul>
+<li>セキュキャン勢で使ってる人多し</li>
+</ul>
+</li>
+<li>Debian<ul>
+<li>大阪で<a href="https://wiki.debian.org/KansaiDebianMeeting" target="_blank" rel="external">勉強会</a>あるよ<ul>
+<li><a href="https://debianjp.connpass.com/event/76814/" target="_blank" rel="external">LILO, 東海道らぐ, OpenSUSEMeetUP and 関西Debian 勉強会 LT大会 - connpass</a></li>
+</ul>
+</li>
+<li>Debian使ってます by nogajun</li>
+</ul>
+</li>
+<li>周りにいる人にあわせる</li>
+</ul>
+</li>
+<li>とっかえひっかえインストールしようぜ<ul>
+<li>壊して作る大宇宙の法則</li>
+<li>手元にいれるならVagrantが便利</li>
+</ul>
+</li>
+<li>新しいPCを買おう</li>
+</ul>
+</li>
+<li>Linux from Scratch<ul>
+<li>スクラッチからLinuxを組みたてるもの<ul>
+<li><a href="http://www.linuxfromscratch.org/lfs/" target="_blank" rel="external">LFS Project Homepage</a></li>
+<li><a href="http://lfsbookja.osdn.jp/7.10/" target="_blank" rel="external">Linux From Scratch(日本語版)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="14-20"><a href="#14-20" class="headerlink" title="14:20"></a>14:20</h2><h3 id="一家に一台-Google-Home"><a href="#一家に一台-Google-Home" class="headerlink" title="一家に一台 Google Home"></a>一家に一台 Google Home</h3><ul>
+<li>リビングに居る時に音楽を聴きたい</li>
+<li>キッチンにスピーカが欲しい</li>
+<li>5.1みたいな音響設備はいらない</li>
+<li>複数台同時再生できる</li>
+<li>BTのイヤホンでいいんじゃない?<ul>
+<li>家の中でデバイスを装備したくない</li>
+</ul>
+</li>
+</ul>
+<h3 id="AliExpressで買い物してます"><a href="#AliExpressで買い物してます" class="headerlink" title="AliExpressで買い物してます"></a><a href="http://ja.aliexpress.com" target="_blank" rel="external">AliExpress</a>で買い物してます</h3><ul>
+<li>ストレス解消に中国ガジェットを買い物をする<ul>
+<li>以前は1ヶ月ぐらいかかってた配送が10日くらいになった。</li>
+<li>中国の品質がよくなった</li>
+<li>品物を受けとってから受領ボタンを押して、初めて店にお金がおちる</li>
+</ul>
+</li>
+</ul>
+<h3 id="Windows-Update-で一部文字化け-12-10あたり"><a href="#Windows-Update-で一部文字化け-12-10あたり" class="headerlink" title="Windows Update で一部文字化け 12/10あたり?"></a>Windows Update で一部文字化け 12/10あたり?</h3><ul>
+<li>一部アプリの一部の日本語が化ける<ul>
+<li>bitbaket</li>
+<li>Cybozu Desktop</li>
+</ul>
+</li>
+<li>日本語リソースが壊れている</li>
+<li><a href="https://qiita.com/ftomo100/items/99df3b308878901a1ee2" target="_blank" rel="external">https://qiita.com/ftomo100/items/99df3b308878901a1ee2</a></li>
+<li>解決！</li>
+</ul>
+<h2 id="15-00"><a href="#15-00" class="headerlink" title="15:00"></a>15:00</h2><h3 id="ASP-Net-で-xlsxからPDFに変換したい"><a href="#ASP-Net-で-xlsxからPDFに変換したい" class="headerlink" title="ASP .Net で xlsxからPDFに変換したい"></a>ASP .Net で xlsxからPDFに変換したい</h3><ul>
+<li><p>LibreOfficeを使う</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/26814534/libreoffice-convert-xlsx-to-pdf-in-asp-net-mvc" target="_blank" rel="external">https://stackoverflow.com/questions/26814534/libreoffice-convert-xlsx-to-pdf-in-asp-net-mvc</a></li>
+</ul>
+</li>
+<li><p>iTextsharp</p>
+<ul>
+<li><a href="http://accelboon.com/tn/?p=1322" target="_blank" rel="external">http://accelboon.com/tn/?p=1322</a></li>
+<li><a href="https://www.nuget.org/packages/iTextSharp/" target="_blank" rel="external">https://www.nuget.org/packages/iTextSharp/</a></li>
+<li>AGPL / Commercial License</li>
+</ul>
+</li>
+<li><p>Free Spire .XLS for .NET</p>
+<ul>
+<li><a href="https://www.e-iceblue.com/Introduce/free-xls-component.html#.WmLcU65l-01" target="_blank" rel="external">https://www.e-iceblue.com/Introduce/free-xls-component.html#.WmLcU65l-01</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="ユーザー認証はOAuth"><a href="#ユーザー認証はOAuth" class="headerlink" title="ユーザー認証はOAuth ?"></a>ユーザー認証はOAuth ?</h3><ul>
+<li>構成<ul>
+<li>クライアントとサーバーをつくる場合の基準?</li>
+<li>サーバサイドで新たにサーバを追加する場合、既存のサーバと新規サーバとの連携はどうやって行う？っていう話？</li>
+<li>サーバ間のOAuth認証の構築ってどうするのが主流なの？<ul>
+<li>言語による？</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Web-Frameworkに必要なもの"><a href="#Web-Frameworkに必要なもの" class="headerlink" title="Web Frameworkに必要なもの"></a>Web Frameworkに必要なもの</h3><ul>
+<li><a href="http://flask.pocoo.org/" target="_blank" rel="external">Flask</a></li>
+<li>構築済み<ul>
+<li>ルーティング</li>
+<li>レンダー</li>
+</ul>
+</li>
+<li>欲しいもの<ul>
+<li>ファイルIO</li>
+<li>データベース接続<ul>
+<li>とりあえずSQLite</li>
+<li>暇なら他の有名どころも</li>
+</ul>
+</li>
+<li>コンフィグ回り<ul>
+<li>YAMLからとか</li>
+<li>INIファイルからとか</li>
+<li>DBからとか</li>
+</ul>
+</li>
+<li>Validatorも<ul>
+<li>一番書くのめんどくさいから作っといてほしい</li>
+</ul>
+</li>
+<li>ユーザ認証も大体入ってるかなあ<ul>
+<li>上記のDB周りがあること前提の機能</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>先にどういう風に使ってほしいかを決めると実装する機能を決めやすいかも？</li>
+<li>PHPの<a href="https://symfony.com/" target="_blank" rel="external">Symfony</a>とか参考になる</li>
+<li><a href="https://github.com/neiesc/awesome-minimalist" target="_blank" rel="external">小さなWebフレームワークリンク集: GitHub - neiesc/awesome-minimalist: A list of awesome minimalist frameworks (simple and lightweight).</a></li>
+</ul>
+<h3 id="GCPは神ですか"><a href="#GCPは神ですか" class="headerlink" title="GCPは神ですか?"></a>GCPは神ですか?</h3><ul>
+<li>spector/meltdown対応が…<ul>
+<li><a href="https://togetter.com/li/1190413" target="_blank" rel="external">Intel CPU に隠された必殺技「アクセラレーション・ブースト」が発見される - Togetter</a></li>
+</ul>
+</li>
+<li>Googleはハードウェアを止めずに対応してる…</li>
+<li>ダウンタイムを理解しないお客が</li>
+<li>お客さんを調教せねば……</li>
+</ul>
+<h3 id="AzureやBlueMix-を教えてください"><a href="#AzureやBlueMix-を教えてください" class="headerlink" title="AzureやBlueMix を教えてください"></a>AzureやBlueMix を教えてください</h3><ul>
+<li>クラウドの勉強を(タダで) したい<ul>
+<li><a href="https://www.ibm.com/cloud-computing/jp/ja/bluemix/" target="_blank" rel="external">BlueMix</a><ul>
+<li>旧Softlayer</li>
+</ul>
+</li>
+<li>GCP<ul>
+<li><a href="http://gigazine.net/news/20171201-google-cloud-platform-minecraft/" target="_blank" rel="external">無料でGoogleのクラウド上にマインクラフトのサーバーを立てて複数人でマルチプレイする方法 - GIGAZINE</a></li>
+</ul>
+</li>
+<li>Azure</li>
+</ul>
+</li>
+<li>何を勉強したいかによる</li>
+<li>擬似的インフラ構築(管理画面)がしたい<ul>
+<li>「さくらのクラウド」のサンドボックス<ul>
+<li><a href="https://manual.sakura.ad.jp/cloud/server/sandbox.html" target="_blank" rel="external">Sandbox(テスト用ゾーン) | さくらのクラウド ドキュメント</a></li>
+<li>構築できるか検証用</li>
+<li>モックサーバーなので動作しない</li>
+<li>無料</li>
+<li>オブジェクトストレージはできない</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="画像からHTMLを生成する時代は来るか"><a href="#画像からHTMLを生成する時代は来るか" class="headerlink" title="画像からHTMLを生成する時代は来るか"></a>画像からHTMLを生成する時代は来るか</h3><ul>
+<li>こない</li>
+<li>来ない（以上）</li>
+<li>そんな未来は幻想だ</li>
+</ul>
+<h2 id="16-20"><a href="#16-20" class="headerlink" title="16:20"></a>16:20</h2><h3 id="リポジトリを分けて管理したい"><a href="#リポジトリを分けて管理したい" class="headerlink" title="リポジトリを分けて管理したい"></a>リポジトリを分けて管理したい</h3><ul>
+<li>どうやったらいい？？</li>
+<li><a href="https://qiita.com/xtetsuji/items/555a1ef19ed21ee42873" target="_blank" rel="external">GitHubでFork/cloneしたリポジトリを本家リポジトリに追従する</a></li>
+<li><a href="https://qiita.com/ta__ho/items/8204a22a53b02ee0817e" target="_blank" rel="external">cherry-pickコマンド備忘録</a></li>
+<li>Mercurialで同じことをやる場合はブランチの扱いに注意したほうがいいかも</li>
+</ul>
+<h3 id="資産のない中小IT企業はどう生き残ればいいのか"><a href="#資産のない中小IT企業はどう生き残ればいいのか" class="headerlink" title="資産のない中小IT企業はどう生き残ればいいのか"></a>資産のない中小IT企業はどう生き残ればいいのか</h3><ul>
+<li>労力に対して売上が少ない<ul>
+<li>フリーランスが安く受ける問題</li>
+<li>見積りがとおらない</li>
+<li>運用フロー次第?<ul>
+<li>HP作成サービスは、テンプレート化などで省力化するなど</li>
+<li>旧態依然とした体制であればできない</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>固定収入がほしい<ul>
+<li>メンテナンス(セキュリティ)</li>
+<li>WEBアクセスしてHP改善していく</li>
+<li>メリットの説明、コンサル料</li>
+</ul>
+</li>
+<li>作業の進化<ul>
+<li>ナレッジをためる(PDCA?)</li>
+<li>標準化(定型化)</li>
+<li>自動化</li>
+</ul>
+</li>
+<li>パッケージソフト<ul>
+<li>パッケージをテンプレート化</li>
+<li>ヘルプデスクや運用方法など</li>
+</ul>
+</li>
+<li>オープンソースを利用<ul>
+<li>使う</li>
+<li>本家にフィードバック</li>
+<li>オープンソースを使っていることを宣伝しブランドイメージを向上させる</li>
+</ul>
+</li>
+<li>ネタ収集<ul>
+<li>ネットから情報を収集しつづける</li>
+</ul>
+</li>
+<li>考えかた<ul>
+<li>顧客がどのような目的か</li>
+<li>どのように儲けをだすか、儲けの一部をいただく。</li>
+<li>コストや手間をかけない(ボタン一個ですましたい)</li>
+<li>責任境界線は大事</li>
+</ul>
+</li>
+</ul>
+<h2 id="告知"><a href="#告知" class="headerlink" title="告知"></a>告知</h2><ul>
+<li>加古川インフラ勉強会 来月第二土曜</li>
+<li>姫路IT系勉強会 来月第三土曜</li>
+<li>OSC 2018 大阪 来週</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;姫路IT系勉強会-2018-01&quot;&gt;&lt;a href=&quot;#姫路IT系勉強会-2018-01&quot; class=&quot;headerlink&quot; title=&quot;姫路IT系勉強会 2018.01&quot;&gt;&lt;/a&gt;姫路IT系勉強会 2018.01&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;開催日：2018
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="姫路IT系勉強会" scheme="https://histudy.github.io/tags/%E5%A7%AB%E8%B7%AFIT%E7%B3%BB%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加古川IT系インフラ勉強会 2017.12</title>
+    <link href="https://histudy.github.io/2017/12/09/kakogawa_infra/2017/12/"/>
+    <id>https://histudy.github.io/2017/12/09/kakogawa_infra/2017/12/</id>
+    <published>2017-12-08T15:00:00.000Z</published>
+    <updated>2017-12-14T14:37:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="加古川IT系インフラ勉強会-2017-12"><a href="#加古川IT系インフラ勉強会-2017-12" class="headerlink" title="加古川IT系インフラ勉強会 2017.12"></a>加古川IT系インフラ勉強会 2017.12</h1><ul>
+<li>開催日：2017/12/9</li>
+<li>司会：wate</li>
+<li>参加者数：参加者: 5名 / 学生: 1名 / Hangout: 0名</li>
+<li>備考：気付いたことなど、自由に記入をお願いします！</li>
+<li>Connpass: <a href="https://connpass.com/event/73820/" target="_blank" rel="external">https://connpass.com/event/73820/</a></li>
+<li>ハッシュタグ：#kakogawa_infra<ul>
+<li><a href="https://twitter.com/search?q=%23kakogawa_infra&amp;src=typd" target="_blank" rel="external">#kakogawa_infra - Twitter検索</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>ACL どうしてる？</li>
+</ul>
+<p>デザイナーさんはあまり。。。<br>CGI をやっていた方は、多少意識している。<br>Windows ユーザーには、「実行権」が理解しづらいかも（Win サーバー管理者を除く）。</p>
+<ul>
+<li><p>RancherOS<br>RacherOS cloud-config.yml メモ(Qiita):<a href="https://qiita.com/FoxBoxsnet/items/cf02c62e5f402fc4a835" target="_blank" rel="external">https://qiita.com/FoxBoxsnet/items/cf02c62e5f402fc4a835</a></p>
+<ul>
+<li>なんか激安サイトありますが<ul>
+<li>２週間ほどトラブってました<ul>
+<li>ansible</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>当初受けがいまいちだった</li>
+<li>天下のRedHatが押してきてる<ul>
+<li>おかげでレガシーな人々の説得が楽になった</li>
+</ul>
+</li>
+<li>2.4でincludeが非推奨になってしまった(警告の嵐…)</li>
+<li>でも2.3との互換性を保とうとすると</li>
+</ul>
+</li>
+<li><p>WordPress を HTTPS 化<br>　 <em> wp-cli で置換　 </em> linkchecker(Python スクリプト)でサイト内のリンク切れをチェック</p>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;加古川IT系インフラ勉強会-2017-12&quot;&gt;&lt;a href=&quot;#加古川IT系インフラ勉強会-2017-12&quot; class=&quot;headerlink&quot; title=&quot;加古川IT系インフラ勉強会 2017.12&quot;&gt;&lt;/a&gt;加古川IT系インフラ勉強会 2017.12&lt;/
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="加古川IT系インフラ勉強会" scheme="https://histudy.github.io/tags/%E5%8A%A0%E5%8F%A4%E5%B7%9DIT%E7%B3%BB%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>姫路IT系勉強会 2017.11</title>
+    <link href="https://histudy.github.io/2017/11/18/histudy/2017/11/"/>
+    <id>https://histudy.github.io/2017/11/18/histudy/2017/11/</id>
+    <published>2017-11-17T15:00:00.000Z</published>
+    <updated>2017-12-14T14:39:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="姫路IT系勉強会-2017-11"><a href="#姫路IT系勉強会-2017-11" class="headerlink" title="姫路IT系勉強会 2017.11"></a>姫路IT系勉強会 2017.11</h1><ul>
+<li>開催日：2017/11/18</li>
+<li>司会：wateさん</li>
+<li>参加者数：参加者: 名 / 学生: 名 / Hangout: -名</li>
+<li>LogURL：<a href="https://hackmd.io/s/r1rUBZF9Z" target="_blank" rel="external">https://hackmd.io/s/r1rUBZF9Z</a></li>
+<li>connpass: <a href="https://histudy.connpass.com/event/71403/" target="_blank" rel="external">https://histudy.connpass.com/event/71403/</a></li>
+<li>ハッシュタグ：#histudy<ul>
+<li><a href="https://twitter.com/search?q=%23histudy&amp;src=typd" target="_blank" rel="external">#histudy - Twitter検索</a></li>
+</ul>
+</li>
+<li>備考： ご自由にご記入ください！！</li>
+<li><p>自己紹介の時に色々脱線しました。</p>
+<ul>
+<li>VBAそろそろ滅ぶべきです</li>
+<li>Java6使えってなんですか</li>
+<li>IE11推奨は一応評価すべきでは</li>
+<li>Trident Onlyな世界です</li>
+<li>システムにエッジ効かせすぎなサイトはブラウザアップデートの時に痛い目みます</li>
+</ul>
+</li>
+<li><p><a href="https://events.opensuse.org/conference/summitasia17" target="_blank" rel="external">OpenSUSE.Asia Summit 2017 Tokyo</a> やってきました</p>
+<ul>
+<li>OpenSUSEはIBMとかが好きみたい</li>
+<li>ヨーロッパ、特にエンタープライズ系、でよく使ってます</li>
+<li>SuSEは実はかなり古株のLinux Distroです</li>
+<li>Libre Office のミニカンファレンス併催</li>
+<li>知り合いと駄弁ってばかり、セッションあまり見てなかったりします</li>
+<li>一日目はLinux KernelどうのこうのとかDockerとかラズパイとか<ul>
+<li>OpenSUSEのビルドシステム(OBS)便利そう-&gt; Debianに移植しました<ul>
+<li><a href="https://ja.opensuse.org/Build_Service" target="_blank" rel="external">https://ja.opensuse.org/Build_Service</a></li>
+</ul>
+</li>
+<li>OBSのワークショップが異常に賑わってたよし</li>
+<li>KapperさんのタブレットLinuxなかなか</li>
+<li>アップデートを切られたTV Box Set にLinuxiれよう、とかも</li>
+<li>女性、特にインドネシアの参加者多し(Libreがらみ?)</li>
+</ul>
+</li>
+<li><p>二日目</p>
+<ul>
+<li>LibreOfficeやってました</li>
+<li>台湾がLibreに移行している</li>
+<li>ODFの利点<ul>
+<li>フリーな規格</li>
+<li>昔のものでも対応できる</li>
+<li>OOXMLはリファレンスがMS OFFICEしかないから</li>
+<li>LibreofficeがなくなってもODFなら使えるはず</li>
+</ul>
+</li>
+<li>そもそも文書構造をちゃんと記述しないと<ul>
+<li>エンターキー連続打鍵で改ページもどき</li>
+<li>大きい文字を「見出し」に見立てたり</li>
+</ul>
+</li>
+<li>見たいのは多かったけど、</li>
+<li>UTF-8の異体字コントロールコード、Libreでちょっとうまくいってないバグ<ul>
+<li>ラテンワンの外国人に問題がなかなか伝わらない</li>
+<li>絵文字の普及により、欧米人にもこのあたりの問題がようやく</li>
+<li>ユニコードと言えば、骨<ul>
+<li>漢字統合の悪口には気をつけて</li>
+</ul>
+</li>
+<li>MySQL、多言語実装ころころ変えすぎ<ul>
+<li>Postgresでいいじゃない</li>
+</ul>
+</li>
+<li>以上、文字コードネタの脱線でしたと</li>
+<li>Testing Ansible Roles using Molecule on openSUSE<ul>
+<li>Speakerはインドネシアの人</li>
+<li>ChefはRubyべったりが厭</li>
+<li>Ansibleはそのへんは言語非依存</li>
+<li>重量級ではなく、ちょうどいいかんじ</li>
+<li>python 2.7系なのが残念</li>
+</ul>
+</li>
+<li>15-16時くらいから帰りの飛行機が心配になってきた<ul>
+<li>焦りながらインドネシア女子大生の微笑ましい発表を聞きましたよ</li>
+</ul>
+</li>
+<li>新幹線に飛び乗って帰姫しました</li>
+<li>記念写真みながら色々<ul>
+<li>国際色豊か。日本のカンファレンスじゃないみたい</li>
+<li>Ubuntu KRリーダー Youngbin Hanさんのレポート: <a href="https://youngbin.xyz/blog/2017/10/23/opensuse-asia-2017-tokyo.html" target="_blank" rel="external">https://youngbin.xyz/blog/2017/10/23/opensuse-asia-2017-tokyo.html</a><ul>
+<li>Google翻訳で読めます</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>KOF2017いってきました</p>
+<ul>
+<li><a href="https://k-of.jp/2017/session/1059" target="_blank" rel="external">関西LISPユーザ会の出展</a>を<a href="https://k-of.jp/2017/" target="_blank" rel="external">KOF2017</a>でやりました<ul>
+<li><a href="https://k-of.jp/2017/session/1069" target="_blank" rel="external">書籍紹介</a>もありましたね</li>
+<li>Common LISPによるEmacsクローンを展示しました<ul>
+<li>漢の浪漫ですか</li>
+<li>Emacsに名前空間ないのでカッとなって実装しました。後悔は(略)</li>
+<li>その場でデバッグ、コミットとかもやってました</li>
+</ul>
+</li>
+<li>シンボリックスのLISP OSがラズパイで動いてました</li>
+<li>仕事のない超絶ハッカーのためにCommonLispの研修所を天川村に作りましたはなし</li>
+<li>天川村は真の<a href="https://www.oreilly.co.jp/books/9784873115870/" target="_blank" rel="external">Land of LISP</a></li>
+</ul>
+</li>
+<li><a href="https://k-of.jp/2017/session/1077" target="_blank" rel="external">ネ申Excelのはなし</a>もありました<ul>
+<li>ネ申Excelの問題点を、ネ申Excelで報告したはなし</li>
+</ul>
+</li>
+<li>某G社が漏らしてはならないデータを漏らした結果を<a href="https://k-of.jp/2017/session/1020" target="_blank" rel="external">取材した話</a>もありました</li>
+</ul>
+</li>
+<li><p>漢直の話<br><a href="https://nz-tcoder.github.io/slide/himeji/tcode/" target="_blank" rel="external">https://nz-tcoder.github.io/slide/himeji/tcode/</a></p>
+<ul>
+<li>漢字直接入力です</li>
+<li>キーの組み合わせで直接漢字入力します</li>
+<li>T-codeではキー二打鍵</li>
+<li>G-codeとかTUT-codeとか、超絶技巧とか</li>
+<li>T-codeのデモ<ul>
+<li>Emacsに直接入力、</li>
+<li>別ウィンドウに、実際に打鍵したキーシーケンス表示</li>
+</ul>
+</li>
+<li>右手20キーに、左手20キーの組み合わせで1600通り中、約1300通りのキーバインドに文字を割り当て</li>
+<li>普段の生活で覚えてるのは15x15x4通りくらいの半分程度?</li>
+<li>T-codeはEmacsとか漢直Winとかで使えます</li>
+<li>誤変換が嫌になって漢直(T-code)になりました<ul>
+<li>ひらがな入力が楽。自然な入力ができる</li>
+<li>「てにをは」がミスりやすい</li>
+<li>漢字をあまり入力しなくなったかも</li>
+<li>略称などは辞書登録なしで使えたり</li>
+<li>練習しないと入力できる漢字は増えない</li>
+<li>17年使っていても、いまだに「修行中」です</li>
+<li>「討手を討つ討議」などを含んだ練習ソフト実演してました</li>
+<li>人を選ぶ入力法です</li>
+</ul>
+</li>
+<li><a href="http://www.edikun.co.jp/kinesis/" target="_blank" rel="external">KINESISキーボード</a>使ってます<ul>
+<li>T-codeにお勧め。姿勢に無理がないです</li>
+<li>Ctrl-Alt-Delが押しやすいです</li>
+<li>高くてかさばります。ファンクションキーが貧弱です</li>
+<li><a href="http://www.meisiya.net/maltron/order.html" target="_blank" rel="external">マルトロンのキーボード</a>は、税抜き12万円。昔は50万くらいしたような</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ネットワーク関連の勉強法おしえて<ul>
+<li>初心者向けの入門書は暗記ばっかりでわけわからん</li>
+<li>MySQLサーバ実装でネットワークトラブル???に</li>
+<li>だから概念をきちんと理解することが大切なんだ</li>
+<li>いや実践しないと理解できないでしょ</li>
+<li>仮想マシンよりラズパイお勧め</li>
+<li>Windowsドメインややこしい…<ul>
+<li>でもSambaでActiveDirectoryは…</li>
+</ul>
+</li>
+<li>みなさんどうやって？<ul>
+<li>私はTCP/IPのプログラムを実装して覚えました</li>
+<li>プライベートでPCが多くなるとLANになりました</li>
+</ul>
+</li>
+<li>PC複数とルータがあれば、それでLANになるので、それでネットワークを勉強したらどうか</li>
+<li>実際のトラブルはCMSなどで問題になります</li>
+<li><a href="https://svrkcho.connpass.com/" target="_blank" rel="external">サーバー構築ハンズオン</a>はいかが<ul>
+<li>手軽なhttpsサーバを立てたいのですが</li>
+<li>開発のためにcurlでアクセスしたいのです</li>
+<li>さくらのクラウドでサンドボックスは?<ul>
+<li>内部で使いたい</li>
+</ul>
+</li>
+<li>REST API Mock Server (検索してください)</li>
+<li>iPhone X 買いました</li>
+<li>Face ID使いにくいです<ul>
+<li>少し傾くと認証通りません</li>
+<li>適正な距離に個人差があります</li>
+</ul>
+</li>
+<li>縁がないのでツムツムやりにくいです</li>
+<li>美点は、、、特に浮かびません</li>
+<li>mobile SUICAは以前から使えますが</li>
+<li>X用のホームボタンあります。有線接続で599ドルです<ul>
+<li><a href="http://micgadget.com/38644/iphone-x-home-button-and-audio-jack/" target="_blank" rel="external">http://micgadget.com/38644/iphone-x-home-button-and-audio-jack/</a></li>
+</ul>
+</li>
+<li>娘さんで生体認証突破を試しましょう</li>
+<li>寝顔では認証通らないので、睡眠中にハックされることはないです</li>
+<li>完全に生体認証のみのデバイスやサービスはまだ危ない感じ<ul>
+<li>最悪に備えたリカバリーコードとか欲しい</li>
+</ul>
+</li>
+<li>開業します。</li>
+<li>屋号なにかありませんか<ul>
+<li>こちらは「開源自由舎」です</li>
+<li>「田中屋」など個人名を冠すると役員交代がですね</li>
+<li>(愉快な雑談が続きました)</li>
+</ul>
+</li>
+<li>CentOS使いづらいです</li>
+<li>Debian管理者ハンドブックは初心者殺しで</li>
+<li><a href="https://debian-handbook.info/browse/ja-JP/stable/" target="_blank" rel="external">https://debian-handbook.info/browse/ja-JP/stable/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Debian勉強会に出て聞けばいいじゃない<ul>
+<li>Centなんてそんなのやってないよね?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;姫路IT系勉強会-2017-11&quot;&gt;&lt;a href=&quot;#姫路IT系勉強会-2017-11&quot; class=&quot;headerlink&quot; title=&quot;姫路IT系勉強会 2017.11&quot;&gt;&lt;/a&gt;姫路IT系勉強会 2017.11&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;開催日：2017
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="姫路IT系勉強会" scheme="https://histudy.github.io/tags/%E5%A7%AB%E8%B7%AFIT%E7%B3%BB%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加古川IT系インフラ勉強会 2017.11</title>
+    <link href="https://histudy.github.io/2017/11/11/kakogawa_infra/2017/11/"/>
+    <id>https://histudy.github.io/2017/11/11/kakogawa_infra/2017/11/</id>
+    <published>2017-11-10T15:00:00.000Z</published>
+    <updated>2017-12-14T14:38:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="加古川IT系インフラ勉強会-2017-11"><a href="#加古川IT系インフラ勉強会-2017-11" class="headerlink" title="加古川IT系インフラ勉強会 2017.11"></a>加古川IT系インフラ勉強会 2017.11</h1><ul>
+<li>開催日：2017/11/11</li>
+<li>司会：wate</li>
+<li>参加者数：参加者: 4名 / 学生: 0名 / Hangout: 2名</li>
+<li>備考：気付いたことなど、自由に記入をお願いします！</li>
+<li>Connpass: <a href="https://connpass.com/event/71401/" target="_blank" rel="external">https://connpass.com/event/71401/</a></li>
+<li>ハッシュタグ：#kakogawa_infra<ul>
+<li><a href="https://twitter.com/search?q=%23kakogawa_infra&amp;src=typd" target="_blank" rel="external">#kakogawa_infra - Twitter検索</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Ansibleを使ってローカル開発環境(LAMP)を構築するやつ(MIT License)<ul>
+<li><a href="https://github.com/wate/lde" target="_blank" rel="external">https://github.com/wate/lde</a></li>
+</ul>
+</li>
+<li>コード管理なので、複数人での共同管理がやりやすくなる</li>
+<li>shellのコマンドや実行結果、ログといったエビデンスが取得しやすい</li>
+<li>CentOS vs Ubuntu vs Debian<ul>
+<li>日本語の資料が多いから…?</li>
+<li>Debian は初心者にはきつい？</li>
+</ul>
+</li>
+<li>Wate さんの GitHub<ul>
+<li><a href="https://github.com/wate?tab=repositories" target="_blank" rel="external">https://github.com/wate?tab=repositories</a></li>
+</ul>
+</li>
+<li>機械学習 = Python ?<ul>
+<li>Python で実験、検証、C++ に直して実機に実装</li>
+<li>Pythonで用意されているAPIがある</li>
+<li>C++にもPythonと似たAPIがある</li>
+</ul>
+</li>
+<li>環境は、Windows -&gt; Docker -&gt; Anaconda</li>
+<li>ハードウェア故障検知に機械学習<ul>
+<li>ハードウェアの故障検知は物理環境特有</li>
+<li>クラウドはオートスケールの判断とか</li>
+</ul>
+</li>
+<li>Ansible でネットワーク機器の設定も可</li>
+<li>プロビジョニングとテストを連携できるツールのデファクトがない…<ul>
+<li>Testinfra ?</li>
+</ul>
+</li>
+<li><p>10月のログに色々書いてあるので見てみよう</p>
+<ul>
+<li><a href="https://histudy.github.io/2017/10/13/kakogawa_infra/2017/10/">10月ログ</a></li>
+</ul>
+</li>
+<li><p>最近安いクラウドに<a href="https://cloudgarage.jp/" target="_blank" rel="external">クラウドガレージ</a>がでてきた</p>
+<ul>
+<li>3インスタンスまで月額1480円固定</li>
+<li>最安プランは今枯渇してるので利用不可(2017/11/11時点)</li>
+</ul>
+</li>
+<li>固定なので瞬間（1日とかX時間だけ）なら時間課金系のほうがいいかも</li>
+<li><p>Ansible ハンズオン、やってみていいかも</p>
+<ul>
+<li>べた書きの PlayBook から</li>
+</ul>
+</li>
+<li><p>ログの可視化、どうしてます？</p>
+<ul>
+<li>マカレルくらいか?</li>
+</ul>
+</li>
+<li><p>ローカルで作るなら？</p>
+<ul>
+<li>FluentdとかLogStashで集めて</li>
+<li>ElasticSearchとかInfluxDBで保管して</li>
+<li>KibanaとかGarafanaとかで可視化？</li>
+</ul>
+</li>
+<li><p>DDoSされたときの対応</p>
+<ul>
+<li>サーバー側で検知してーは規模が大きくなると管理しきれない</li>
+<li>経路で止めるべき？</li>
+<li>怪しいログを集めておいて問題起きたら目視確認とか</li>
+</ul>
+</li>
+<li><p>サーバーが古くなったので新しくしたい</p>
+<ul>
+<li>HWだけならまだ対応しやすい</li>
+<li>OSとかミドルウェアのバージョン違いでハマりやすい</li>
+<li>RHEL5 -&gt; RHEL7とか（INITプロセス違うから・・・）</li>
+</ul>
+</li>
+<li>(メールサーバ自作は男のロマン？)</li>
+<li>VPS でもいいけど、メールサーバーはしんどい<ul>
+<li>迷惑メール対策とか</li>
+</ul>
+</li>
+<li><p><a href="https://www.sakura.ne.jp/mail/" target="_blank" rel="external">メールボックス(sakura internet)</a></p>
+</li>
+<li><p>巷のサーバーレス、Dockerとは</p>
+<ul>
+<li>結局、サーバーは必要では..</li>
+<li>自分で管理するサーバーが無いからサーバーレス？</li>
+<li>AWS<ul>
+<li>Lambda</li>
+<li>AWSを試すのは、お金が必要<ul>
+<li>パートナーになって無料利用分をもらう手も..?</li>
+</ul>
+</li>
+<li>失敗談がなかなか出てこない<ul>
+<li>インフラだけではない問題</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>GCP</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;加古川IT系インフラ勉強会-2017-11&quot;&gt;&lt;a href=&quot;#加古川IT系インフラ勉強会-2017-11&quot; class=&quot;headerlink&quot; title=&quot;加古川IT系インフラ勉強会 2017.11&quot;&gt;&lt;/a&gt;加古川IT系インフラ勉強会 2017.11&lt;/
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="加古川IT系インフラ勉強会" scheme="https://histudy.github.io/tags/%E5%8A%A0%E5%8F%A4%E5%B7%9DIT%E7%B3%BB%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>姫路IT系勉強会 2017.10</title>
+    <link href="https://histudy.github.io/2017/10/21/histudy/2017/10/"/>
+    <id>https://histudy.github.io/2017/10/21/histudy/2017/10/</id>
+    <published>2017-10-20T15:00:00.000Z</published>
+    <updated>2017-10-22T16:38:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="姫路IT系勉強会-2017-10"><a href="#姫路IT系勉強会-2017-10" class="headerlink" title="姫路IT系勉強会 2017.10"></a>姫路IT系勉強会 2017.10</h1><ul>
+<li>開催日：2017/10/21</li>
+<li>司会：wateさん</li>
+<li>参加者数：参加者: 9名 / 学生: 0名 / Hangout: -名</li>
+<li>LogURL：<a href="https://hackmd.io/s/r1rUBZF9Z" target="_blank" rel="external">https://hackmd.io/s/r1rUBZF9Z</a></li>
+<li>connpass: <a href="https://histudy.connpass.com/event/67352/" target="_blank" rel="external">https://histudy.connpass.com/event/67352/</a></li>
+<li>ハッシュタグ：#histudy<ul>
+<li><a href="https://twitter.com/search?q=%23histudy&amp;src=typd" target="_blank" rel="external">#histudy - Twitter検索</a></li>
+</ul>
+</li>
+<li>備考： ご自由にご記入ください！！</li>
+</ul>
+<hr>
+<h2 id="13-45"><a href="#13-45" class="headerlink" title="13:45"></a>13:45</h2><ul>
+<li>準備</li>
+<li>自己紹介</li>
+</ul>
+<h2 id="13-00"><a href="#13-00" class="headerlink" title="13:00"></a>13:00</h2><ul>
+<li>MP3 と愉快な仲間たち<ul>
+<li>スライド<ul>
+<li><a href="https://www.slideshare.net/secret/DUW3QvqMdktC5u" target="_blank" rel="external">https://www.slideshare.net/secret/DUW3QvqMdktC5u</a></li>
+<li>Lame MP3 Player etc.</li>
+<li>ID3タグ組み合わせ色々</li>
+<li>文字コードの闇に嵌っています</li>
+<li>UCS-2 Unicode って何? 16bit</li>
+<li>UCS-2 Unicode vs UTF-16</li>
+<li>UCS-2 でCJKVが足りない…サロゲートペア?</li>
+<li>MP3 ucs-2 utf</li>
+<li>Webやってると文字コードでしぬ。特にMySQLまわりで</li>
+</ul>
+</li>
+<li>PostgreSQLにいこう</li>
+<li>MySQLは何かと地雷だらけ。バージョンごとの差異とか</li>
+</ul>
+</li>
+</ul>
+<h2 id="14-00"><a href="#14-00" class="headerlink" title="14:00"></a>14:00</h2><ul>
+<li><p>RSS Readerの有効活用</p>
+<ul>
+<li>RSS Reader: 3名は使っています</li>
+<li>情報収集をする方法<ul>
+<li>RSSリーダー<ul>
+<li>一般的にはfeedly?<ul>
+<li>更新のタイムラグが気に入らない</li>
+</ul>
+</li>
+<li>Inoreader</li>
+</ul>
+</li>
+<li>Slack モヒカン        [<a href="https://qiita.com/kotakanbe@github/items/32cf4eb3de1741af26fb" target="_blank" rel="external">https://qiita.com/kotakanbe@github/items/32cf4eb3de1741af26fb</a>]<ul>
+<li>ノイズも結構多いぞ</li>
+<li>ジャンル、流通量が多い</li>
+</ul>
+</li>
+<li>Twitter <ul>
+<li>速報向け</li>
+<li>事故地震などはいい</li>
+<li>ノイズがかなり多い</li>
+</ul>
+</li>
+<li>古の通信方法<ul>
+<li>海外や古いOSSではまだ使われています。</li>
+<li>メーリングリスト<ul>
+<li>普通に使ってますが?</li>
+</ul>
+</li>
+<li>IRC<ul>
+<li>音ゲ専用のチャットサーバ立ててました(廃人時代)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>RSS ならGithub のRelease Page 追うのがいい<ul>
+<li>URLの末尾に.atom</li>
+</ul>
+</li>
+<li>githubのリリースページのURLに .atom を追加するとRSSでとれる</li>
+<li>slackもインテグレーションにrssがある<ul>
+<li>たまーに読めないのもあるけど</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>セッション管理について(CakePHP,etc)</p>
+<ul>
+<li>カートの管理について</li>
+<li>php.iniのデフォルトでは24分でセッションがクリアされるので注意</li>
+<li>Web サーバのセッションが切れるタイミングについて</li>
+<li>Dockerは熟練者の手抜きツールで初心者の手抜きツールじゃねえ！！！</li>
+<li>MBA ってなんだ<br>[<a href="https://ja.wikipedia.org/wiki/MBA" target="_blank" rel="external">https://ja.wikipedia.org/wiki/MBA</a>]</li>
+</ul>
+</li>
+<li><p>農業とITと</p>
+<ul>
+<li>実は家が農家で、先週籾摺りやってました</li>
+<li>活用法はどんなのが？</li>
+<li>さくらのIoT</li>
+<li>永久課題: 属人化<ul>
+<li>ハイパーストーキングシステム</li>
+<li>農家専用?</li>
+<li>林田さん<ul>
+<li>自宅を自作するおじいちゃん。</li>
+<li>PHPシステムを自作。</li>
+<li>顔と名前を一回で覚えつづける。</li>
+</ul>
+</li>
+<li>わてさん<ul>
+<li>2代目..?</li>
+<li>後は家を自作するだけ。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="15-00"><a href="#15-00" class="headerlink" title="15:00"></a>15:00</h2><ul>
+<li><p>メール送信の自動化</p>
+<ul>
+<li>サーバ使わない系でお願いします</li>
+<li>最近普通にAPI叩けばいけるんだぜ<ul>
+<li>[<a href="https://www.mailgun.com/" target="_blank" rel="external">https://www.mailgun.com/</a>]</li>
+<li>[<a href="https://sendgrid.kke.co.jp/" target="_blank" rel="external">https://sendgrid.kke.co.jp/</a>] さくらクラウドから可能</li>
+</ul>
+</li>
+<li>SPAM対策<ul>
+<li>DNS 認証しっかりやって</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Ansible使ってみた</p>
+<ul>
+<li>失敗談と困ったことと…</li>
+<li>OpenPNEとか試してみたい</li>
+<li>サーバ上のコマンドをAnsibleに変換するチートシートがなかった<ul>
+<li>困ったらまず Module Index 見なさい　<a href="http://docs.ansible.com/ansible/latest/modules_by_category.html" target="_blank" rel="external">http://docs.ansible.com/ansible/latest/modules_by_category.html</a></li>
+</ul>
+</li>
+<li>Document Browser<ul>
+<li>Dash (Mac) <a href="http://docs.ansible.com/ansible/latest/modules_by_category.html" target="_blank" rel="external">http://docs.ansible.com/ansible/latest/modules_by_category.html</a></li>
+<li>Zeal(Win) <a href="https://zealdocs.org/" target="_blank" rel="external">https://zealdocs.org/</a></li>
+<li>ドキュメントをソースと同時に書いてしまうPythonを見習ってほしい</li>
+<li>検索窓に「ansible:xxxxx」</li>
+</ul>
+</li>
+<li>WinSCP繋げっパでOS再インストールしないようにしましょう</li>
+<li>CentOSはさっさと7にしなさい。<ul>
+<li><a href="http://archive.kernel.org/centos-vault/" target="_blank" rel="external">http://archive.kernel.org/centos-vault/</a> ??</li>
+<li>でもPHP古いんですよね…</li>
+</ul>
+</li>
+<li>去年までVB4.xのメンテしておりました<ul>
+<li>これでもWin7で<em>曲がりなりにも</em>動くんです <h1 id="雑談タイム"><a href="#雑談タイム" class="headerlink" title="雑談タイム"></a>雑談タイム</h1></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>さくらクラウドとか</p>
+<ul>
+<li>teraform とか色々</li>
+<li>転送量課金がないのと、課金なしのSandboxがありがたいです</li>
+</ul>
+</li>
+<li>CSSが面倒ならSass CSS(さす)で</li>
+<li>node-saas</li>
+<li><a href="https://qiita.com/ritukiii/items/67b3c50002b48c6186d6#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB" target="_blank" rel="external">https://qiita.com/ritukiii/items/67b3c50002b48c6186d6#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;姫路IT系勉強会-2017-10&quot;&gt;&lt;a href=&quot;#姫路IT系勉強会-2017-10&quot; class=&quot;headerlink&quot; title=&quot;姫路IT系勉強会 2017.10&quot;&gt;&lt;/a&gt;姫路IT系勉強会 2017.10&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;開催日：2017
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="姫路IT系勉強会" scheme="https://histudy.github.io/tags/%E5%A7%AB%E8%B7%AFIT%E7%B3%BB%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加古川IT系インフラ勉強会 2017.10</title>
+    <link href="https://histudy.github.io/2017/10/14/kakogawa_infra/2017/10/"/>
+    <id>https://histudy.github.io/2017/10/14/kakogawa_infra/2017/10/</id>
+    <published>2017-10-13T15:00:00.000Z</published>
+    <updated>2017-10-22T16:38:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="加古川IT系インフラ勉強会-2017-10"><a href="#加古川IT系インフラ勉強会-2017-10" class="headerlink" title="加古川IT系インフラ勉強会 2017.10"></a>加古川IT系インフラ勉強会 2017.10</h1><ul>
+<li>開催日：2017/10/14</li>
+<li>司会：wate</li>
+<li>参加者数：参加者:  5名 / 学生:  1名 / Hangout:  名</li>
+<li>備考：気付いたことなど、自由に記入をお願いします！</li>
+<li>Connpass: <a href="https://histudy.connpass.com/event/67351/" target="_blank" rel="external">https://histudy.connpass.com/event/67351/</a></li>
+<li>ハッシュタグ：#kakogawa_infra<ul>
+<li><a href="https://twitter.com/search?q=%23kakogawa_infra&amp;src=typd" target="_blank" rel="external">#kakogawa_infra - Twitter検索</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>最近の障害ネタ<ul>
+<li><a href="http://support.sakura.ad.jp/mainte/mainteentry.php?id=22606" target="_blank" rel="external">http://support.sakura.ad.jp/mainte/mainteentry.php?id=22606</a></li>
+</ul>
+</li>
+<li>さくらのクラウド スタートアップスクリプト「Let’s Encrypt」<ul>
+<li><a href="https://github.com/sakura-internet/cloud-startupscripts/blob/master/publicscript/letsencrypt/letsencrypt.sh" target="_blank" rel="external">https://github.com/sakura-internet/cloud-startupscripts/blob/master/publicscript/letsencrypt/letsencrypt.sh</a></li>
+</ul>
+</li>
+<li>スタートアップスクリプトのロール化、Ansibleのロール　</li>
+<li>やりたいことベースで必要なサーバーのスペックとか選べると、<br>サーバーに詳しくない人が困らないかも？<ul>
+<li>スタックのGUI作成、ウィザード形式<ul>
+<li>IDCFの<a href="https://www.idcf.jp/cloud/simulation.php" target="_blank" rel="external">クラウド料金シミュレーション</a>みたいな感じ</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DockerとVMの使い分け</li>
+<li>パブリックイメージの初期構成の差異がツライ<ul>
+<li>クラウド各社のサーバーのテンプレートイメージのドキュメントがねぇ・・<ul>
+<li>Ansibleなんかで構成管理をしてても微妙な差違を吸収するのが結構しんどい</li>
+<li>　さくらのクラウドなんかはちゃんと公開されてて助かる<ul>
+<li>　<a href="https://manual.sakura.ad.jp/cloud/os-packages/archive-iso/centos73-releasenote.html" target="_blank" rel="external">CentOS 7.3 (1611) 64bit リリースノート</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>イメージのバージョン管理・レジストリ<ul>
+<li><a href="https://www.vagrantup.com/" target="_blank" rel="external">Vagrant</a>用のイメージなら<a href="https://app.vagrantup.com/" target="_blank" rel="external">Vagrant Cloud</a>じゃね？</li>
+<li><a href="https://dev.classmethod.jp/tool/atlas-atablance/" target="_blank" rel="external">Hashicorp AtlasでVagrant, Packer, Terraformを連携させる</a></li>
+<li><a href="https://www.slideshare.net/CarlosNunez37/introduction-to-terraform-enterprise" target="_blank" rel="external">Introduction to Terraform Enterprise</a></li>
+<li><a href="https://pocketstudio.net/2017/06/01/vagrant-cloud-migration0announcement-translate.md/" target="_blank" rel="external">【参考訳】Vagrant Cloud へ移行のお知らせ（6月27日）</a></li>
+</ul>
+</li>
+<li>インフラのテストフレームワーク<ul>
+<li><a href="http://kitchen.ci/" target="_blank" rel="external">Test Kitchen</a></li>
+<li><a href="http://serverspec.org/" target="_blank" rel="external">Serverspec</a></li>
+<li><a href="https://molecule.readthedocs.io/en/latest/" target="_blank" rel="external">Molecule</a></li>
+<li><a href="https://www.inspec.io/" target="_blank" rel="external">InSpec</a></li>
+<li><a href="[https://testinfra.readthedocs.io/en/latest/">Testinfra</a></li>
+<li><a href="https://github.com/aelsabbahy/goss" target="_blank" rel="external">goss</a></li>
+<li><a href="https://github.com/sstephenson/bats" target="_blank" rel="external">Bats</a></li>
+</ul>
+</li>
+<li>各クラウドベンダーのステータスを横断して確認したい<ul>
+<li><a href="https://cloudharmony.com/status" target="_blank" rel="external">CloudHarmony</a></li>
+</ul>
+</li>
+<li>モニタリング監視ツール<ul>
+<li><a href="https://qiita.com/quickguard/items/31e8d5ced9be54c25a8c" target="_blank" rel="external">TICK stack でモニタリング環境を構築 (Telegraf + InfluxDB + Chronograf + Kapacitor)</a></li>
+<li><a href="https://nicolargo.github.io/glances/" target="_blank" rel="external">Glances</a>をデーモンモードで動かして、<a href="https://github.com/influxdata/influxdb" target="_blank" rel="external">InfluxDB</a>に突っ込んで、(Grafana)[<a href="https://grafana.com/]で見やすくする？" target="_blank" rel="external">https://grafana.com/]で見やすくする？</a></li>
+</ul>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;加古川IT系インフラ勉強会-2017-10&quot;&gt;&lt;a href=&quot;#加古川IT系インフラ勉強会-2017-10&quot; class=&quot;headerlink&quot; title=&quot;加古川IT系インフラ勉強会 2017.10&quot;&gt;&lt;/a&gt;加古川IT系インフラ勉強会 2017.10&lt;/
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="加古川IT系インフラ勉強会" scheme="https://histudy.github.io/tags/%E5%8A%A0%E5%8F%A4%E5%B7%9DIT%E7%B3%BB%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>姫路IT系勉強会 2017.09</title>
+    <link href="https://histudy.github.io/2017/09/16/histudy/2017/09/"/>
+    <id>https://histudy.github.io/2017/09/16/histudy/2017/09/</id>
+    <published>2017-09-15T15:00:00.000Z</published>
+    <updated>2017-10-22T16:38:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="姫路IT系勉強会-2017-09"><a href="#姫路IT系勉強会-2017-09" class="headerlink" title="姫路IT系勉強会 2017.09"></a>姫路IT系勉強会 2017.09</h1><ul>
+<li>開催日：2017/09/16</li>
+<li>司会：wateさん</li>
+<li>参加者数：参加者: 11名 / 学生: 1名 / Hangout: 1名</li>
+<li>LogURL：<a href="https://hackmd.io/s/r1rUBZF9Z" target="_blank" rel="external">https://hackmd.io/s/r1rUBZF9Z</a></li>
+<li>connpass: <a href="https://histudy.connpass.com/event/66084/" target="_blank" rel="external">https://histudy.connpass.com/event/66084/</a></li>
+<li>ハッシュタグ：#histudy<ul>
+<li><a href="https://twitter.com/search?q=%23histudy&amp;src=typd" target="_blank" rel="external">#histudy - Twitter検索</a></li>
+</ul>
+</li>
+<li>備考： ご自由にご記入ください！！</li>
+</ul>
+<hr>
+<h2 id="13-45"><a href="#13-45" class="headerlink" title="13:45"></a>13:45</h2><ul>
+<li>準備</li>
+<li>自己紹介</li>
+</ul>
+<h2 id="14-00"><a href="#14-00" class="headerlink" title="14:00"></a>14:00</h2><ul>
+<li><p>モダンなHTML,CSSの勉強どうしましょうか</p>
+<ul>
+<li>昔と今の差分が分かればありがたいです</li>
+<li>個人的なHP目的</li>
+<li><a href="https://www.w3schools.com/cssref/css3_browsersupport.asp" target="_blank" rel="external">CSS3 Reference</a> の一覧をとりあえず見る</li>
+<li>CSS3とかflexboxとかで検索すれば</li>
+<li>CSSよりSASSをどう書くか、がホットな話題っぽい<ul>
+<li>HexoではStylus使ってる人が多い感じ。<a href="http://stylus-lang.com/" target="_blank" rel="external">Expressive, dynamic, robust CSS — expressive, robust, feature-rich CSS preprocessor</a></li>
+</ul>
+</li>
+<li>追っかけて行くとキリがないので<a href="http://getbootstrap.com/" target="_blank" rel="external">bootstrap4</a>などのフレームワークに任せたほうが</li>
+<li>定番(フルスタック)か軽量か?<ul>
+<li>フルスタック系も軽量系も2つとも選択肢に入れた方がいい</li>
+</ul>
+</li>
+<li><a href="http://bourbon.io/" target="_blank" rel="external">Bourbon</a>とかどうか<ul>
+<li>bourbonに上乗せして(色々積み上げできる模様)</li>
+<li>Sassの上に乗っているフレームワーク<ul>
+<li>実態はSassの <code>@mixin</code></li>
+</ul>
+</li>
+<li>今から生のCSSやる気はないので</li>
+</ul>
+</li>
+<li>Bootstrap舐めてから試してみます </li>
+<li>node のSASSとrubyのSASSほぼ互換性とれてる</li>
+<li>(なんかカオス…、つかおまえら統一しろ)</li>
+<li>みんな独自のお作法入れすぎ。途中からの参入組には???</li>
+<li>サーバサイドとフロントエンドもう少し歩み寄ってほしい</li>
+<li>基本機能以外はプラグインに任せるプラグインアーキテクチャが最近流行っていて</li>
+<li>rubyは依存関係がきつい。アップデートするとエラーでまくり</li>
+<li>nodeも大差ないような。作りっぱなしのモジュールとか</li>
+<li>Node.jsのタスクランナー (Makeみたいなやつ)<ul>
+<li>GrantとかGulpとかのカオス</li>
+<li>最近npm scriptsがベター</li>
+</ul>
+</li>
+<li>Webはデザイン系とフロントエンドがあり、フロントエンドがサーバサイドに降りてきて…という変化が</li>
+<li>github の awesome から持ってくると少し安心?<ul>
+<li>各言語・フレームワーク・環境などのベストプラクティス集</li>
+<li>Awesomeなんとかの一覧<ul>
+<li><a href="https://github.com/sindresorhus/awesome" target="_blank" rel="external">sindresorhus/awesome: Curated list of awesome lists</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>rubyの場合、gemsの進化に付いてこられないパッケージは置いていかれてしまいます</li>
+</ul>
+</li>
+<li><p>WordPressの情報求む</p>
+<ul>
+<li>ロリポップで前に作ったやつがわからなくなったという</li>
+<li>なぜか全く知らない僕に話が来ました</li>
+<li>まずWordBenchに行きましょう<ul>
+<li><a href="http://wordbench.org/groups/kobe/" target="_blank" rel="external">神戸 | WordBench</a></li>
+</ul>
+</li>
+<li>SSLに関してはロリポップに依存</li>
+<li>WORDPRESS のプラグイン 100選とかの本を調べるといい</li>
+<li>脆弱性のオンパレードなので注意<ul>
+<li><a href="https://histudy.connpass.com/event/66082/" target="_blank" rel="external">前回</a>盛り上がりました</li>
+</ul>
+</li>
+<li>解決策：金を積む<ul>
+<li>人手を使いたくなかったら、金を積め</li>
+</ul>
+</li>
+<li>こういうのもあるよ。サポートフォーラム — WordPress <a href="https://ja.wordpress.org/support/" target="_blank" rel="external">https://ja.wordpress.org/support/</a></li>
+<li>中途半端なドキュメントでも、「ないよりまし」</li>
+<li>コマンドのhistoryでも、Markdownの箇条書きでも</li>
+</ul>
+</li>
+<li><p>Markdown・ドキュメントに関して</p>
+<ul>
+<li><a href="https://gitpitch.com/sky-y/himeji-it-2017-09" target="_blank" rel="external">発表資料 (GitPitch)</a> (<a href="https://twitter.com/sky_y" target="_blank" rel="external">すかいゆき / 藤原惟(@sky_y)</a>)</li>
+<li>副題 Markdownのカオスと付き合うはなし<ul>
+<li>@<strong>gfx</strong>問題(処理系によってレンダリングまちまち)</li>
+<li>なんか<a href="https://twitter.com/ockeghem/status/354428069357957124" target="_blank" rel="external">徳丸さんメールアドレス</a>みたい</li>
+<li>Markdownは器用貧乏<ul>
+<li>Markdown はいろいろにつかえるがそこそこ</li>
+</ul>
+</li>
+<li>Markdownの方言とその処理系の違い<ul>
+<li>CommonMarkdown (共通フレームワーク) か GFM (Github 風マークダウン拡張)おすすめ</li>
+</ul>
+</li>
+<li>pandoc のススメ<ul>
+<li>Pandoc でいろいろな形式に変換</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>QA<ul>
+<li>Markdown.pl オリジナル</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>徳島女子中学生の詐欺事件シーケンス図秀逸</p>
+<pre><code>* [Fork](https://gist.github.com/shunirr/2bd6a5a00b966e1e534b443790c68eda/forks)がいくつかあるらしい？
+    * 本家？ [shunirr/criminal_jc.md 女子中学生チケット詐欺事件](https://gist.github.com/shunirr/2bd6a5a00b966e1e534b443790c68eda)
+    * 詳しい [kawabata / criminal_jc.md](https://gist.github.com/kawabata/fefd78b84856ed7900c69eb9aba3af19)
+</code></pre></li>
+<li><p><a href="http://search.cpan.org/~asavige/Acme-EyeDrops-1.62/lib/Acme/EyeDrops.pm" target="_blank" rel="external">Acme::EyeDrops</a></p>
+<ul>
+<li>Acmeとは: Perlのジョークモジュール群</li>
+<li>実行例<ul>
+<li>材料: “Hello, Word”を出力するスクリプト</li>
+<li>このスクリプトを、ラクダのアスキーアートが入ったPerlスクリプトに変換</li>
+<li>アスキーアートを直接 <code>perl</code> コマンドにパイプすると、”Hello, World”が表示される</li>
+<li>ラクダ以外に色々なアスキーアートあり(Larry Wallとか)</li>
+</ul>
+</li>
+<li>実行に必要な「余分な1行」を無くすための戦い<ul>
+<li>標準だと <code>eval eval</code> の行が余分に出てしまう</li>
+<li>正規表現オプション</li>
+</ul>
+</li>
+<li>アスキーアートの一行目は”Hello, Wolrd”のエンコード</li>
+<li>2行目以降は無意味な処理(絵のみ)</li>
+<li>2017-10-15追記 発表原稿 <a href="https://nz-tcoder.github.io/slide/himeji/eye-drops/" target="_blank" rel="external">https://nz-tcoder.github.io/slide/himeji/eye-drops/</a></li>
+</ul>
+</li>
+<li>Blueborne (Bluetooth脆弱性)<ul>
+<li><a href="https://www.jpcert.or.jp/at/2017/at170037.html" target="_blank" rel="external">Bluetooth の実装における脆弱性 “BlueBorne” に関する注意喚起</a></li>
+<li>手元のAndroidで BlueBorne Vulnerability Scanner を試したら脆弱と出たので Bluetooth テザリングを使うのをやめた</li>
+<li>車載システム（カーナビ）がやばい<ul>
+<li>あんなのカーネルのアップデートなんてできるか</li>
+<li>車のシステム：エンジン系とエンタメ系<ul>
+<li>エンジン系の不具合はやばいので真面目に対応する</li>
+<li>エンタメ系は割と優先度低め<ul>
+<li>しかし現代では無視できないのでは？</li>
+<li>エンタメ系からエンジン系にアクセスできる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>やばいことを説明すると僕が悪者扱いになるのです</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>未来のシステムや開発言語は何が</p>
+<ul>
+<li>JAVAは案件が多いが開発者も多い</li>
+<li>もっと先を見据えたものを</li>
+<li>実用(目的にあったもの)と教養と</li>
+<li>教養方面: エンジニアHubの「第二言語としての○○」シリーズがおすすめ<ul>
+<li><a href="https://employment.en-japan.com/engineerhub/entry/2017/05/19/110000" target="_blank" rel="external">いま学ぶべき第二のプログラミング言語はコレだ！ 未来のために挑戦したい9つの言語とその理由 - エンジニアHub｜若手Webエンジニアのキャリアを考える！</a></li>
+</ul>
+</li>
+<li>Web系に限らず一般的にはPHP、機械学習ならPython?</li>
+<li>「未来」は流行り廃りの予想がつかないので、直近の流行りを見るとPHPかJavaScriptになる(就活対策として有効?)<ul>
+<li>それをベースに、目的に応じた違うプログラミング言語を目指すという手もある</li>
+</ul>
+</li>
+<li><del>COBOLなら、NetCOBOLもJavaCOBOLもあるよ！新規案件もry</del></li>
+<li>COBOLのプログラムはそう簡単にはなくならない</li>
+<li>FORTRAN 77 はスパコン目的ではなくならない</li>
+<li>「どのコミュニティに居たいか？」という選び方</li>
+<li>2017-10-15追記 少々偏っているものでは、<a href="http://postd.cc/best-programming-languages/" target="_blank" rel="external">http://postd.cc/best-programming-languages/</a> というのもあります。</li>
+</ul>
+</li>
+<li><p>VR AR MR <a href="https://connpass.com/user/akihiro01051/" target="_blank" rel="external">akihiro01051さん</a></p>
+<ul>
+<li>ホロラボ社 HoloLensのソフトウェア開発</li>
+<li>Win MR (Windows Mixed Reality Headset)<ul>
+<li>VRに特化したHMD</li>
+</ul>
+</li>
+<li>Windows 10: 複合現実ポータル<ul>
+<li>EdgeがVRに対応<ul>
+<li>WebGLベース</li>
+<li>Webブラウザで360度を視聴可能に</li>
+</ul>
+</li>
+<li>Visual Studio (UWPアプリ)<ul>
+<li>現状はUnityが対応</li>
+<li>近々Unreal Engineも対応？</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>最近はビジネス目的の参入もある模様<ul>
+<li>デバイスの低価格化(性能は同じ)も進んでいる</li>
+<li>商品の展示とか操縦の訓練目的など</li>
+<li>アプリケーションは長いこと研究段階だったが、最近実用志向になりつつある<ul>
+<li>実は若干性能不足だったりする</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>HoloLensの脆弱性対策はかなり堅い<ul>
+<li>通信対象の制限やソフトのアップデートなどで防御している</li>
+</ul>
+</li>
+<li>VRでデバッグはどうやるの？<ul>
+<li>社内でも結論は決まっていない状況</li>
+<li>普通にVisual Studioでできるデバッグはやる</li>
+<li>実際に体験してデバッグする<ul>
+<li>VR酔い対策</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>復活したGoogle Glass</li>
+</ul>
+</li>
+<li><p>Lispを勉強する足がかりは何がありますか</p>
+<ul>
+<li>LispはLisp1とLisp2がある<ul>
+<li>名前空間の扱いが違う<ul>
+<li>Lisp1は関数と変数を区別しない</li>
+<li>Lisp2は関数と変数を区別する</li>
+</ul>
+</li>
+<li>Scheme (Lisp1)<ul>
+<li>教育用、コンパクト</li>
+<li>きっちり書かないといけない</li>
+<li>処理系の例として <a href="https://www.oreilly.co.jp/books/9784873115870/" target="_blank" rel="external">gauche</a></li>
+<li><a href="https://www.amazon.co.jp/Scheme%E6%89%8B%E7%BF%92%E3%81%84-Daniel-P-Friedman/dp/4274068269" target="_blank" rel="external">Scheme手習い</a>なんかどうでしょうか</li>
+</ul>
+</li>
+<li>CommonLisp(Lisp2)<ul>
+<li>何でもアリ、やりたい放題</li>
+<li>ライブラリが充実</li>
+<li>処理系の例として<a href="https://clisp.sourceforge.io/" target="_blank" rel="external">CLISP</a></li>
+<li>とりあえず<a href="https://www.oreilly.co.jp/books/9784873115870/" target="_blank" rel="external">Land of Lisp</a></li>
+</ul>
+</li>
+<li><a href="http://www.lispworks.com/documentation/HyperSpec/Front/" target="_blank" rel="external">CommonLisp HyperSpec</a><ul>
+<li><a href="http://www.lispworks.com/documentation/HyperSpec/Front/Hilights.htm" target="_blank" rel="external">CLHS: Selected Highlights</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>クワインやってみろ<ul>
+<li>自分自身と出力内容が同じになるプログラム </li>
+</ul>
+</li>
+<li>変数名に空白文字などが使える変な仕様</li>
+<li>Emacs Lispの是非について </li>
+<li>MacならClojure CL (Clozure CL?)</li>
+<li>プログラミング入門サイト（英語） <a href="http://exercism.io/" target="_blank" rel="external">exercism.io</a><ul>
+<li><a href="http://exercism.io/languages/common-lisp/about" target="_blank" rel="external">Common Lisp - exercism.io</a></li>
+</ul>
+</li>
+<li><a href="https://kansai-lisp-useres.connpass.com/" target="_blank" rel="external">関西Lispユーザ会 - connpass</a> で聞こう<ul>
+<li>次回 10/7 at グランフロント大阪 <a href="https://kansai-lisp-useres.connpass.com/event/62030/" target="_blank" rel="external">第3回関西Lispユーザ会 - connpass</a></li>
+<li><a href="https://kansai-lisp-users.herokuapp.com/" target="_blank" rel="external">Join kansai-lisp-users on Slack!</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>連絡事項<ul>
+<li><a href="https://k-of.jp/2017/" target="_blank" rel="external">KOF2017</a> 出展ないしはセミナーなど募集中です。一般参加も歓迎します<ul>
+<li>入場無料(懇親会のみ有償)</li>
+</ul>
+</li>
+<li>姫路IT系勉強会<ul>
+<li>会費を上げたい<ul>
+<li>案：1人500円</li>
+<li>学生・ゲストに対して優遇する（交通費支援など）ための資金がほしいので</li>
+<li>イベントなどのイレギュラーな予算に積みたい</li>
+</ul>
+</li>
+<li>会場が変わります<ul>
+<li>姫路市民会館</li>
+<li>Wi-Fiが厳しいので、自前ネット回線を推奨<ul>
+<li>最悪、モバイルルータは貸し出せる</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>以上、お疲れさまでした</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;姫路IT系勉強会-2017-09&quot;&gt;&lt;a href=&quot;#姫路IT系勉強会-2017-09&quot; class=&quot;headerlink&quot; title=&quot;姫路IT系勉強会 2017.09&quot;&gt;&lt;/a&gt;姫路IT系勉強会 2017.09&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;開催日：2017
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="姫路IT系勉強会" scheme="https://histudy.github.io/tags/%E5%A7%AB%E8%B7%AFIT%E7%B3%BB%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加古川IT系インフラ勉強会 2017.09</title>
+    <link href="https://histudy.github.io/2017/09/09/kakogawa_infra/2017/09/"/>
+    <id>https://histudy.github.io/2017/09/09/kakogawa_infra/2017/09/</id>
+    <published>2017-09-08T15:00:00.000Z</published>
+    <updated>2017-10-22T16:37:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="加古川IT系インフラ勉強会-2017-09"><a href="#加古川IT系インフラ勉強会-2017-09" class="headerlink" title="加古川IT系インフラ勉強会 2017.09"></a>加古川IT系インフラ勉強会 2017.09</h1><ul>
+<li>開催日：2017/09/09</li>
+<li>司会：wate</li>
+<li>参加者数：参加者: 6名 / 学生: 0名 / Hangout: 1名</li>
+<li>備考：気付いたことなど、自由に記入をお願いします！</li>
+<li>Connpass: <a href="https://histudy.connpass.com/event/66082/" target="_blank" rel="external">https://histudy.connpass.com/event/66082/</a></li>
+<li>ハッシュタグ：#kakogawa_infra</li>
+</ul>
+<hr>
+<h2 id="脆弱性"><a href="#脆弱性" class="headerlink" title="脆弱性"></a>脆弱性</h2><ul>
+<li>MySQLの不満あれこれ<ul>
+<li>いつの間にかテーブルサイズが肥大化する</li>
+<li>プラグインによっては、wp_options テーブルが肥大化。。。</li>
+<li>「汎用化」に振りすぎ？</li>
+</ul>
+</li>
+<li>Wordpressのセキュリティ対策<ul>
+<li>REST APIで脆弱性が増えたかも</li>
+<li>パーミッションに注意</li>
+<li>セーフモードは既に意味なさげ</li>
+<li>プラグインを制限する</li>
+<li>接続元を国内限定にする(かなり効いた)</li>
+<li>ファイルのチェックサムを取る</li>
+<li>gitで管理する</li>
+<li>WPScanかける</li>
+<li>…のような面倒な作業はJenkinsに任せたい(LDAPサーバどうしよう)</li>
+</ul>
+</li>
+<li>Jenkinsによる自動化とか勉強会やってみたい<ul>
+<li>Jenkins2.0でPipelineが導入された。便利そう</li>
+</ul>
+</li>
+<li>うちのインフラ部門がAmazon Linux大好きなので、最近そちらやってます<ul>
+<li>Debian慣れしてるので、Amazon Linux 気持ち悪い</li>
+<li>RedHatに似てるが、バージョンをがんがんあげるので互換性に不安</li>
+</ul>
+</li>
+<li>CentOS めんどくさい<ul>
+<li>7に移行中です</li>
+<li>7になれてない人大丈夫？</li>
+</ul>
+</li>
+<li>やはりサーバは2-3年で更新しないと</li>
+<li>クラウドで管理はだいぶ楽になった<ul>
+<li>Shell Scrptでちまちま管理してましたがAnsibleでOK</li>
+<li>OpenStackまわりとかやってみたいね(ConoHaとか)</li>
+</ul>
+</li>
+<li>Vineなつかし。MecabはまだUTF-8がデフォルトじゃないのかしら</li>
+<li>幸いWordPressの闇はまだ見たことないです</li>
+<li>Webの勉強会開催は難しい?<ul>
+<li>勉強会のフォームを用意して、「あとはよろしくね」というメソッドが有効?</li>
+<li>WordBench姫路開催の予感</li>
+<li>WordBench京都、大阪、神戸の所感もげもげ</li>
+</ul>
+</li>
+<li>サーバ管理ネタをWordBenchあたりで話してみる?<ul>
+<li>管理者の視点で言えることとか</li>
+</ul>
+</li>
+<li>サーバアプリケーションの脆弱性対応は、業者ではやりにくい(検閲とかに該当)</li>
+<li>WordPress改竄スクリプトの解析とかやってるところもあります</li>
+<li>改竄コードの例<ul>
+<li>$dataという変数に、あらかじめbase64でエンコードしておいた生データをデコード、代入している</li>
+<li>$dataをそのままeval、とかやってそう</li>
+<li>怪し気なzipファイルを展開している</li>
+<li>zipファイル展開確認。フィッシングサイトを開設するとおぼしきphpのコード一式が入っていた</li>
+<li>おそらく同時に撒いたであろうspamにここのURLが入ってるはず</li>
+<li>ACLファイルを入れ替えられてるも</li>
+</ul>
+</li>
+<li>Fail2banをSMTPなどにも入れている</li>
+<li>sshアクセスはWebからのアクセス元のみに限定する</li>
+<li>FollowSymlinkの禁止を導入したが、一部ツールはこれに依存していたりする</li>
+<li><p>JavaScriptの脆弱性</p>
+<ul>
+<li><p>難読コード(昔の一例) </p>
+  <figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line">    $sF=<span class="string">"PCT4BA6ODSE_"</span>;</div><div class="line">    $s21=strtolower($sF[<span class="number">4</span>].$sF[<span class="number">5</span>].$sF[<span class="number">9</span>].$sF[<span class="number">10</span>].$sF[<span class="number">6</span>].$sF[<span class="number">3</span>].$sF[<span class="number">11</span>].$sF[<span class="number">8</span>].$sF[<span class="number">10</span>].$sF[<span class="number">1</span>].$sF[<span class="number">7</span>].$sF[<span class="number">8</span>].$sF[<span class="number">10</span>]);</div><div class="line">    $s20=strtoupper($sF[<span class="number">11</span>].$sF[<span class="number">0</span>].$sF[<span class="number">7</span>].$sF[<span class="number">9</span>].$sF[<span class="number">0</span>]);<span class="keyword">if</span> (<span class="keyword">isset</span>($&#123;$s20&#125;[<span class="string">'nd335c3'</span>])) &#123;</div><div class="line">        <span class="keyword">eval</span>($s21($&#123;$s20&#125;[<span class="string">'nd335c3'</span>]));</div><div class="line">    &#125;</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li></li>
+</ul>
+</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;加古川IT系インフラ勉強会-2017-09&quot;&gt;&lt;a href=&quot;#加古川IT系インフラ勉強会-2017-09&quot; class=&quot;headerlink&quot; title=&quot;加古川IT系インフラ勉強会 2017.09&quot;&gt;&lt;/a&gt;加古川IT系インフラ勉強会 2017.09&lt;/
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="加古川IT系インフラ勉強会" scheme="https://histudy.github.io/tags/%E5%8A%A0%E5%8F%A4%E5%B7%9DIT%E7%B3%BB%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>姫路IT系勉強会 2017.08 出張版</title>
+    <link href="https://histudy.github.io/2017/08/19/histudy/2017/08/"/>
+    <id>https://histudy.github.io/2017/08/19/histudy/2017/08/</id>
+    <published>2017-08-18T15:00:00.000Z</published>
+    <updated>2017-08-19T15:15:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="姫路IT系勉強会-2017-08-出張版"><a href="#姫路IT系勉強会-2017-08-出張版" class="headerlink" title="姫路IT系勉強会 2017.08 出張版"></a>姫路IT系勉強会 2017.08 出張版</h1><ul>
+<li>開催日：2017/08/19</li>
+<li>司会：wate</li>
+<li>参加者数：参加者: 28名 / 学生: -名 / Hangout: 0名</li>
+<li><a href="https://histudy.connpass.com/event/57870/" target="_blank" rel="external">Connpass: https://histudy.connpass.com/event/57870/</a></li>
+<li><a href="https://hackmd.io/s/rJ7lA-r_-" target="_blank" rel="external">https://hackmd.io/s/rJ7lA-r_-</a></li>
+<li>ハッシュタグ：<strong>#histudy</strong></li>
+<li>備考：気付いたことなど、<strong>自由に</strong>記入をお願いします！</li>
+</ul>
+<hr>
+<h2 id="姫路IT系勉強会の紹介"><a href="#姫路IT系勉強会の紹介" class="headerlink" title="姫路IT系勉強会の紹介"></a>姫路IT系勉強会の紹介</h2><ul>
+<li>2012年からやってます</li>
+<li>今はアンカンファレンスでみんなでネタを持ち寄る形</li>
+</ul>
+<hr>
+<h2 id="自己紹介"><a href="#自己紹介" class="headerlink" title="自己紹介"></a>自己紹介</h2><ul>
+<li>人数めっちゃ多かった</li>
+</ul>
+<h2 id="姫路IT系勉強会-開催のきっかけ"><a href="#姫路IT系勉強会-開催のきっかけ" class="headerlink" title="姫路IT系勉強会　開催のきっかけ"></a>姫路IT系勉強会　開催のきっかけ</h2><ul>
+<li>最初はハックカフェでした</li>
+<li>勉強会で講師呼ぶスタイルがしんどいから座談会形式を取り入れたらうまく行った<ul>
+<li>司会者はくじ引き</li>
+</ul>
+</li>
+<li>田舎にいたので、開催地が姫路になった<ul>
+<li>姫路は勉強会の空白地帯</li>
+<li>神戸より西は勉強会がない(岡山にはある)</li>
+<li>神戸も長い勉強会が少ない</li>
+</ul>
+</li>
+<li>加古川でもやっている</li>
+<li>明石高専のひと<ul>
+<li>言語系の人が多い</li>
+<li>「Perlは神の言語や」</li>
+<li>Haskell とか</li>
+<li>正規表現エンジン</li>
+<li>黒歴史ジェネレータ</li>
+<li>元々勉強会に飢えていた。今明石高専内で独自の勉強会が開催されている<ul>
+<li>そのうち高専生は自分で学内勉強会作った</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>林田さんとか農業のIoTをやってたり<ul>
+<li>プログラム知らない状態ー＞システム作ったまで</li>
+<li>やる気でなんでもできるんですね…</li>
+</ul>
+</li>
+</ul>
+<h2 id="Gitの脆弱性"><a href="#Gitの脆弱性" class="headerlink" title="Gitの脆弱性"></a>Gitの脆弱性</h2><ul>
+<li>GitでSSHを使ったクローンをするときに任意のシェルを実行できる<ul>
+<li>リポジトリに仕込んでおけばコード実行可</li>
+</ul>
+</li>
+<li><p>うんこもりもり： <a href="https://twitter.com/grethlen/status/897139115782582273" target="_blank" rel="external">https://twitter.com/grethlen/status/897139115782582273</a><br><a href="https://github.com/greymd/CVE-2017-1000117" target="_blank" rel="external">https://github.com/greymd/CVE-2017-1000117</a><br><code>git clone --recursive https://github.com/greymd/CVE-2017-1000117.git</code></p>
+</li>
+<li><p><a href="http://tkybpp.hatenablog.com/entry/2017/08/15/182950" target="_blank" rel="external">http://tkybpp.hatenablog.com/entry/2017/08/15/182950</a></p>
+</li>
+<li>SIOS Gitの脆弱性 ( CVE-2017-1000117 ) <a href="https://oss.sios.com/security/git-security-vulnerabiltiy-20170813" target="_blank" rel="external">https://oss.sios.com/security/git-security-vulnerabiltiy-20170813</a></li>
+<li>直接クローンするだけでなくHomeBrewやアプリの仕組みの中でクローンも気にしないと行けない</li>
+<li>SubversionとかCVSも同様にセキュリティパッチが出ていたのでおそらく同じような脆弱性があったのかも</li>
+<li>参考：SourceTreeの情報（Atlassian社の情報）<br>要約：最新バージョンにバージョンアップすればおｋ<br>Git/Mercurial/SVN の脆弱性の影響を受ける製品と対応方法について - Atlassian Community<br><a href="https://community.atlassian.com/t5/Agile-articles/Git-Mercurial-SVN-%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%81%AE%E5%BD%B1%E9%9F%BF%E3%82%92%E5%8F%97%E3%81%91%E3%82%8B%E8%A3%BD%E5%93%81%E3%81%A8%E5%AF%BE%E5%BF%9C%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/ba-p/625280" target="_blank" rel="external">https://community.atlassian.com/t5/Agile-articles/Git-Mercurial-SVN-%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%81%AE%E5%BD%B1%E9%9F%BF%E3%82%92%E5%8F%97%E3%81%91%E3%82%8B%E8%A3%BD%E5%93%81%E3%81%A8%E5%AF%BE%E5%BF%9C%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/ba-p/625280</a></li>
+</ul>
+<h2 id="電源断耐久性のあるファイルシステムを知りたい"><a href="#電源断耐久性のあるファイルシステムを知りたい" class="headerlink" title="電源断耐久性のあるファイルシステムを知りたい"></a>電源断耐久性のあるファイルシステムを知りたい</h2><ul>
+<li>UPSを買う</li>
+<li>ファイルを別のところにおいておく</li>
+<li>NunDRAM</li>
+<li>ファイル保護目的なら読み込み専用FileSystemを使う<ul>
+<li><a href="https://ja.wikipedia.org/wiki/SquashFS" target="_blank" rel="external">https://ja.wikipedia.org/wiki/SquashFS</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="自宅NW更改してみた"><a href="#自宅NW更改してみた" class="headerlink" title="自宅NW更改してみた"></a>自宅NW更改してみた</h2><ul>
+<li>7万で DL380G7/MEM:72GB/SAS 146gbx6 をゲット.</li>
+<li>ｲｯﾊﾟﾝのｺﾞｶﾃｲこわい…<ul>
+<li>起動時に壁ドン</li>
+<li>300W</li>
+<li>NATにするとゲームができないので、固定IPに、ospfでわける</li>
+</ul>
+</li>
+</ul>
+<h2 id="自宅サーバを稼動し続ける上で安全性を保つために必要な事は"><a href="#自宅サーバを稼動し続ける上で安全性を保つために必要な事は" class="headerlink" title="自宅サーバを稼動し続ける上で安全性を保つために必要な事は"></a>自宅サーバを稼動し続ける上で安全性を保つために必要な事は</h2><ul>
+<li>自宅サーバで気をつけること<ul>
+<li>埃とエアフローと火事</li>
+<li>不要なポートは開けない</li>
+<li>DDOS対策しておく　ISPで止められないように</li>
+<li>もしくはVPNでのみ入れるようにしておく</li>
+<li>脆弱性スキャナ?<br>  <a href="https://github.com/future-architect/vuls" target="_blank" rel="external">https://github.com/future-architect/vuls</a></li>
+</ul>
+</li>
+<li>クラウドを使いましょう<ul>
+<li>VALTR 安い　東京リージョンある(注：英語)</li>
+<li><a href="https://www.vultr.com/" target="_blank" rel="external">https://www.vultr.com/</a></li>
+</ul>
+</li>
+<li>自宅サーバーの良さ<ul>
+<li>NASの安さ</li>
+<li>ロマンがある<ul>
+<li>帰ってきてHPのロゴが光ってるとかっこいい</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="情報系の勉強をするにあたって、何かアドバイスをください"><a href="#情報系の勉強をするにあたって、何かアドバイスをください" class="headerlink" title="情報系の勉強をするにあたって、何かアドバイスをください"></a>情報系の勉強をするにあたって、何かアドバイスをください</h2><ul>
+<li>デザイナー路線<ul>
+<li>作りたいものを明確にする</li>
+<li>大学でhpを作成して同人サイトをつくった</li>
+<li>Photoshopなどのソフトを使いこなす<ul>
+<li>見た目、 イラスト書いたり</li>
+</ul>
+</li>
+<li>モノをひとつつくる、完成させる</li>
+</ul>
+</li>
+<li>違うジャンルを組合せるといろいろできてよい</li>
+<li>困ったら Twitterとかで質問を投げてみよう</li>
+</ul>
+<h2 id="ログイン機能について"><a href="#ログイン機能について" class="headerlink" title="ログイン機能について"></a>ログイン機能について</h2><ul>
+<li>ホームページをつくっておき、それをBasic認証などで認証させてフォルダ単位でダウンロードさせたい</li>
+<li>Wordpressやそのプラグインの機能ではできない</li>
+<li>Wordpressでどうこうしようとしない</li>
+<li>そんなに厳密なセキュリティを求めない要件であれば、記事にパスワード設定する、というのでもいけるかも？<br>(参考)記事に閲覧制限のパスワードを設定 - WordPressの使い方<br><a href="https://www.adminweb.jp/wordpress/post/index9.html" target="_blank" rel="external">https://www.adminweb.jp/wordpress/post/index9.html</a><br>実例(パスワードは「nadesiko」です)：<br><a href="http://skrn0ntrsb2.sakura.ne.jp/wp/2017/08/19/%e7%a7%98%e5%af%86%e3%81%ae%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab/" target="_blank" rel="external">http://skrn0ntrsb2.sakura.ne.jp/wp/2017/08/19/%e7%a7%98%e5%af%86%e3%81%ae%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab/</a></li>
+</ul>
+<h2 id="Chocolateyやろうぜ-か-MySQL-to-PostgreSQL"><a href="#Chocolateyやろうぜ-か-MySQL-to-PostgreSQL" class="headerlink" title="Chocolateyやろうぜ　か　MySQL to PostgreSQL"></a>Chocolateyやろうぜ　か　MySQL to PostgreSQL</h2><ul>
+<li>Chocolatey(<a href="https://chocolatey.org/" target="_blank" rel="external">https://chocolatey.org/</a>)</li>
+<li>Windowsでソフトウェアパッケージが管理できるよ<ul>
+<li>入れたいパッケージは検索可能<ul>
+<li><a href="https://chocolatey.org/packages" target="_blank" rel="external">https://chocolatey.org/packages</a></li>
+</ul>
+</li>
+<li>一覧にファイルなくても自分でパッケージも作れます</li>
+<li>Boxstarterはいいぞ！<ul>
+<li><a href="http://boxstarter.org/" target="_blank" rel="external">http://boxstarter.org/</a> <a href="https://chocolatey.org/packages/boxstarter" target="_blank" rel="external">https://chocolatey.org/packages/boxstarter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Git　<a href="https://github.com/chocolatey/choco" target="_blank" rel="external">https://github.com/chocolatey/choco</a></li>
+<li>Upload（アカウント作ってね）　<a href="https://chocolatey.org/packages/upload" target="_blank" rel="external">https://chocolatey.org/packages/upload</a></li>
+</ul>
+<h2 id="DNSSECについて"><a href="#DNSSECについて" class="headerlink" title="DNSSECについて"></a>DNSSECについて</h2><ul>
+<li><a href="https://www.nic.ad.jp/ja/newsletter/No43/0800.html" target="_blank" rel="external">https://www.nic.ad.jp/ja/newsletter/No43/0800.html</a></li>
+<li><a href="https://jprs.jp/tech/notice/2017-07-10-root-zone-ksk-rollover.pdf" target="_blank" rel="external">https://jprs.jp/tech/notice/2017-07-10-root-zone-ksk-rollover.pdf</a><ul>
+<li>まあ、BindよりもPowerDNSっすなぁ</li>
+<li>MyDNSとかNSDも…</li>
+</ul>
+</li>
+</ul>
+<h2 id="なぜやつらは働き方改革といえば「IT」となるのか"><a href="#なぜやつらは働き方改革といえば「IT」となるのか" class="headerlink" title="なぜやつらは働き方改革といえば「ＩＴ」となるのか"></a>なぜやつらは働き方改革といえば「ＩＴ」となるのか</h2><ul>
+<li>テレワークとかの在宅勤務ばかり（ITを使う話になりやすい）</li>
+<li>サービス残業増加とかのリスクはあまり騒がれていないのはなぜ？<ul>
+<li>やりがいがある、やりすぎてしまう、楽しい</li>
+</ul>
+</li>
+<li>ITを入れたらOkとか今までの仕組みをごっそり変えるのは無理<ul>
+<li>そもそも入れる前に要件定義するべき</li>
+</ul>
+</li>
+<li>働きやすさを求める奴は使えない？今はそうでもない</li>
+<li>前提条件として仕事＝無理やりじゃないとやらないものだけではない<ul>
+<li>仕事＝趣味をもとにした改革でもいいんでは？</li>
+<li>苦行＝美徳をなくせばいいんじゃないかなぁ</li>
+</ul>
+</li>
+</ul>
+<h2 id="AWK-amp-sed-Programming"><a href="#AWK-amp-sed-Programming" class="headerlink" title="AWK &amp; sed Programming"></a>AWK &amp; sed Programming</h2><ul>
+<li>色々(<a href="https://github.com/takubo" target="_blank" rel="external">https://github.com/takubo</a>)</li>
+<li>AWK言語</li>
+<li>AWKが言語だと気づかない人(迷える子羊)達を救う必要があった</li>
+<li>アンケート<ul>
+<li>その他の回答が多数、枠にとらわれない</li>
+</ul>
+</li>
+<li>awkGL<ul>
+<li><a href="https://github.com/takubo/awkGL" target="_blank" rel="external">https://github.com/takubo/awkGL</a></li>
+</ul>
+</li>
+<li>プログラミング言語 sed</li>
+<li>sedにデバッガがないからあまり使われない<ul>
+<li>デバッガを作ったのでデモ</li>
+</ul>
+</li>
+<li><a href="https://github.com/takubo/gsed-dbg" target="_blank" rel="external">takubo/gsed-dbg</a></li>
+<li>Q:Perlでだめなんですか？<ul>
+<li>A:質問の意味がわからない</li>
+</ul>
+</li>
+</ul>
+<h2 id="infrastructure-as-Code-実際どれくらい進んでる？"><a href="#infrastructure-as-Code-実際どれくらい進んでる？" class="headerlink" title="infrastructure as Code 実際どれくらい進んでる？"></a>infrastructure as Code 実際どれくらい進んでる？</h2><ul>
+<li>手順書を求められる（コードが手順では・・・？）<ul>
+<li>EXCEL方眼紙</li>
+<li>そもそも手順書が間違っている<ul>
+<li>手順書がない！</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>AnsibleとかChefとかPuppet<ul>
+<li>学習コストが・・・と言われる</li>
+</ul>
+</li>
+<li>NW環境とか・・・<ul>
+<li>Terraformで管理できるよ！</li>
+</ul>
+</li>
+<li>Ansibleめんどくさいからいいのない？というところも</li>
+<li>全体構成のTerraformと個別の作り方乗ってるAnsibleとか<ul>
+<li>ツールの認知度が悪い？<ul>
+<li>最近はRedHatが関わってるので説得はしやすいかも？</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>IaCが個人で勉強するのが大変（特に全体構成Terraform）<ul>
+<li>クラウド関係でやりやすい</li>
+<li>Terrafromとかならさくらクラウドのサンドボックスとか</li>
+</ul>
+</li>
+<li>TerrafromまでいかないサイズならUsacloudとかも<ul>
+<li><a href="https://github.com/sacloud/usacloud" target="_blank" rel="external">https://github.com/sacloud/usacloud</a><br>*</li>
+</ul>
+</li>
+<li>さくらクラウド　Sandbox(テスト用ゾーン)<br>  <a href="https://cloud-news.sakura.ad.jp/sandbox/" target="_blank" rel="external">https://cloud-news.sakura.ad.jp/sandbox/</a></li>
+</ul>
+<h2 id="ネット環境が非常に遅い"><a href="#ネット環境が非常に遅い" class="headerlink" title="ネット環境が非常に遅い"></a>ネット環境が非常に遅い</h2><ul>
+<li>パズドラが繋がらない<ul>
+<li>PPPoEなIPv4環境だと夜間1Mbpsな楽しいことに</li>
+<li>IPv6環境にしてIPoEにしたら70Mbpsくらいまで復活<ul>
+<li>IPv4は変換サーバーまでIPv6にトンネリング</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="技術系書籍執筆環境はどうしてますか？"><a href="#技術系書籍執筆環境はどうしてますか？" class="headerlink" title="技術系書籍執筆環境はどうしてますか？"></a>技術系書籍執筆環境はどうしてますか？</h2><ul>
+<li>ご隠居、本を出す<ul>
+<li><a href="https://www.gitbook.com/" target="_blank" rel="external">Gitbook</a>とか</li>
+<li>gitbookで技術書を書く環境の構築手順 | takemikami’s note <a href="http://takemikami.com/2017/02/14/gitbook.html" target="_blank" rel="external">http://takemikami.com/2017/02/14/gitbook.html</a></li>
+<li>TextLintで確認</li>
+<li><a href="http://knowledge.sakura.ad.jp/knowledge/sacloud/sacloud-enjoy/" target="_blank" rel="external">楽しいさくらのクラウド</a></li>
+</ul>
+</li>
+<li><a href="https://techbookfest.org/" target="_blank" rel="external">技術書典</a></li>
+<li>どうやって作ったらいいかわからないという人も</li>
+<li>販売場所＝OSCで売れるよ<ul>
+<li>あと５ヶ月もあるよ！作れるよ！</li>
+</ul>
+</li>
+<li>書き方は<a href="https://ja.wikipedia.org/wiki/Markdown" target="_blank" rel="external">MarkDown</a>とか</li>
+<li>秘伝のタレ状態を本にしたい<ul>
+<li>テキストで書くだけ書いてそれをまとめるとか</li>
+</ul>
+</li>
+</ul>
+<h2 id="Mac-OS-Server-Xserve-の使い方"><a href="#Mac-OS-Server-Xserve-の使い方" class="headerlink" title="Mac OS Server(Xserve)の使い方"></a>Mac OS Server(Xserve)の使い方</h2><ul>
+<li>OSに拘らずに、サーバー(UNIXサーバー)として使う。</li>
+<li>とりあえずCIサーバーにしてみよう！</li>
+</ul>
+<hr>
+<h2 id="VRの世界教えて"><a href="#VRの世界教えて" class="headerlink" title="VRの世界教えて"></a>VRの世界教えて</h2><ul>
+<li>360度カメラで撮影した画像ではよくわからない</li>
+<li>何を買えばいいのか教えて欲しい<ul>
+<li>Thetaが手頃<ul>
+<li>thetaでは画質は満足できない</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.pano-vr.com/theta/" target="_blank" rel="external">http://www.pano-vr.com/theta/</a></li>
+<li><a href="http://www.asahi.com/multimedia/vr360/" target="_blank" rel="external">http://www.asahi.com/multimedia/vr360/</a></li>
+<li>360度動画は撮影は大変よ。自分自身が入ってしまう<ul>
+<li>Googleが180度動画の規格作ったよ</li>
+<li><a href="https://vr.google.com/vr180/" target="_blank" rel="external">https://vr.google.com/vr180/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="クーベルネイテスでコンテナ管理"><a href="#クーベルネイテスでコンテナ管理" class="headerlink" title="クーベルネイテスでコンテナ管理"></a>クーベルネイテスでコンテナ管理</h2><ul>
+<li><a href="https://kubernetes.io/" target="_blank" rel="external">https://kubernetes.io/</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes" target="_blank" rel="external">https://github.com/kubernetes/kubernetes</a></li>
+<li><a href="https://www.ossnews.jp/oss_info/Kubernetes" target="_blank" rel="external">https://www.ossnews.jp/oss_info/Kubernetes</a></li>
+<li>これは何?<ul>
+<li>Kubernetes (クーベルネイテス) とは、Dockerコンテナ群管理フレームワークです。</li>
+<li>コンテナ群のデプロイ/オーケストレーション/クラスタリング管理/運用管理などの各機能を提供します。</li>
+</ul>
+</li>
+<li>概念がよくわかっていないので知りたい</li>
+<li>バージョン毎に設定がことなる</li>
+<li>まずは現状で使用している技術の把握と、Docker化が可能か確認すること</li>
+</ul>
+<h2 id="Vagrantのプロビジョナー-ansible-localの使い方"><a href="#Vagrantのプロビジョナー-ansible-localの使い方" class="headerlink" title="Vagrantのプロビジョナー ansible_localの使い方"></a>Vagrantのプロビジョナー ansible_localの使い方</h2><ul>
+<li><a href="https://www.vagrantup.com/docs/provisioning/ansible_local.html" target="_blank" rel="external">https://www.vagrantup.com/docs/provisioning/ansible_local.html</a></li>
+<li>hostsファイルがゲストに送られない<ul>
+<li>Vagrantが独自にフォルダを作って動くから<ul>
+<li>.vagrantフォルダ</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="ip-link-8-で何が面白いの"><a href="#ip-link-8-で何が面白いの" class="headerlink" title="ip-link(8)で何が面白いの"></a>ip-link(8)で何が面白いの</h2><ul>
+<li>使っている方の情報求む</li>
+</ul>
+<h2 id="PC-ボードへLinuxを移植したい"><a href="#PC-ボードへLinuxを移植したい" class="headerlink" title="PC ボードへLinuxを移植したい"></a>PC ボードへLinuxを移植したい</h2><ul>
+<li><a href="http://www.plathome.co.jp/support/labo/obs/" target="_blank" rel="external">初代OpenBlockS</a><ul>
+<li>MPC860 -&gt; PowerPC PRePでサポートされてそう</li>
+</ul>
+</li>
+<li>NetBSDポーティング例<br><a href="https://www.okqubit.net/machines/plathome.html" target="_blank" rel="external">https://www.okqubit.net/machines/plathome.html</a></li>
+<li>ロマン</li>
+<li>中華のAllwinnerがおすすめ<ul>
+<li>(Hikey960最強じゃないすか<br><a href="https://www.96boards.org/product/hikey960/" target="_blank" rel="external">https://www.96boards.org/product/hikey960/</a></li>
+<li>Pine64もええすよ <a href="https://www.pine64.org/" target="_blank" rel="external">https://www.pine64.org/</a><ul>
+<li>Pinebookいじってます</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="vagrant-proxmoxができない"><a href="#vagrant-proxmoxができない" class="headerlink" title="vagrant proxmoxができない"></a>vagrant proxmoxができない</h2><ul>
+<li>自己解決</li>
+</ul>
+<h2 id="ライセンス管理について"><a href="#ライセンス管理について" class="headerlink" title="ライセンス管理について"></a>ライセンス管理について</h2><ul>
+<li>ライセンス検出・分析ツールのFOSSology<ul>
+<li>FOSSology <a href="https://www.fossology.org/" target="_blank" rel="external">https://www.fossology.org/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="自宅NW更改してみた、ふたたび"><a href="#自宅NW更改してみた、ふたたび" class="headerlink" title="自宅NW更改してみた、ふたたび"></a>自宅NW更改してみた、ふたたび</h2><ul>
+<li>レオパレスの電源ヤバイ</li>
+</ul>
+<h2 id="さくらのクラウド"><a href="#さくらのクラウド" class="headerlink" title="さくらのクラウド"></a>さくらのクラウド</h2><ul>
+<li>sacloud · GitHub <a href="https://github.com/sacloud" target="_blank" rel="external">https://github.com/sacloud</a></li>
+</ul>
+<h1 id="次回予定"><a href="#次回予定" class="headerlink" title="次回予定"></a>次回予定</h1><ul>
+<li>加古川IT系インフラ勉強会<ul>
+<li>2017/09/09(土曜日) 18:00 ～</li>
+</ul>
+</li>
+<li>姫路IT系勉強会<ul>
+<li>2017/09/16(土曜日) 13:15 ～</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;姫路IT系勉強会-2017-08-出張版&quot;&gt;&lt;a href=&quot;#姫路IT系勉強会-2017-08-出張版&quot; class=&quot;headerlink&quot; title=&quot;姫路IT系勉強会 2017.08 出張版&quot;&gt;&lt;/a&gt;姫路IT系勉強会 2017.08 出張版&lt;/h1&gt;&lt;
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="姫路IT系勉強会" scheme="https://histudy.github.io/tags/%E5%A7%AB%E8%B7%AFIT%E7%B3%BB%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>姫路IT系勉強会 2017.07</title>
+    <link href="https://histudy.github.io/2017/07/15/histudy/2017/07/"/>
+    <id>https://histudy.github.io/2017/07/15/histudy/2017/07/</id>
+    <published>2017-07-14T15:00:00.000Z</published>
+    <updated>2017-08-19T15:14:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="姫路IT系勉強会-2017-07"><a href="#姫路IT系勉強会-2017-07" class="headerlink" title="姫路IT系勉強会 2017.07"></a>姫路IT系勉強会 2017.07</h1><ul>
+<li>開催日：2017/07/15</li>
+<li>司会：wateさん(?)</li>
+<li>参加者数：参加者: 7名 / 学生: 2名 / Hangout: 1名(学生)</li>
+<li>備考：ご自由にご記入ください！！</li>
+<li>URL：<a href="https://hackmd.io/s/rk-GczDrb" target="_blank" rel="external">https://hackmd.io/s/rk-GczDrb</a></li>
+<li>ハッシュタグ：#histudy</li>
+</ul>
+<hr>
+<h2 id="13-45"><a href="#13-45" class="headerlink" title="13:45"></a>13:45</h2><ul>
+<li>準備</li>
+<li>自己紹介</li>
+</ul>
+<h2 id="14-00"><a href="#14-00" class="headerlink" title="14:00"></a>14:00</h2><h3 id="Pinebook"><a href="#Pinebook" class="headerlink" title="Pinebook"></a><a href="https://www.pine64.org/?page_id=3707" target="_blank" rel="external">Pinebook</a></h3><ul>
+<li>arm64 で $99 メモリ2GB<ul>
+<li>ubuntu 16.04 mate</li>
+<li>普通につかえる Chromebookより普通</li>
+<li>デスクトップ環境をセットアップをAnsibleにすると便利</li>
+<li>よく壊れるらしい</li>
+<li>LinuxやMacでは、デスクトップ環境をAnsible化すると便利</li>
+<li>勉強会用のデスクトップ環境のAnsibleがあればいい</li>
+</ul>
+</li>
+</ul>
+<h3 id="グランフロント下見"><a href="#グランフロント下見" class="headerlink" title="グランフロント下見"></a>グランフロント下見</h3><h3 id="Wordpress-はじめました"><a href="#Wordpress-はじめました" class="headerlink" title="Wordpress はじめました"></a>Wordpress はじめました</h3><ul>
+<li>Wordpress, PHP など初心者が引き継ぎなしでアサインされたよ<ul>
+<li>基本的には公式情報をメインに</li>
+<li>ググルのは、公式で解決しなかった場合</li>
+<li>Wordpressの設定やプラグラインで対応する。</li>
+</ul>
+</li>
+<li><a href="https://wpdocs.osdn.jp/Main_Page" target="_blank" rel="external">WordPress Codex</a><ul>
+<li>階層</li>
+<li>条件分岐タグ</li>
+<li>テンプレートタグ</li>
+</ul>
+</li>
+<li>検証環境なし<ul>
+<li>DBバックアップなし</li>
+<li>本番に載せ替える前にWindowsであれば、XAMPPで検証する</li>
+<li>もしくは <a href="https://local.getflywheel.com/" target="_blank" rel="external">https://local.getflywheel.com/</a></li>
+</ul>
+</li>
+<li>WordPressのお作法に則っていればPHPのバージョンはそれほど気にならない<ul>
+<li>PHP直書きすると被害を受けます</li>
+</ul>
+</li>
+<li>デバッグモードを使おう<ul>
+<li>本番では使わないでね</li>
+</ul>
+</li>
+</ul>
+<h2 id="15-00"><a href="#15-00" class="headerlink" title="15:00"></a>15:00</h2><h3 id="塾向けのリソース管理"><a href="#塾向けのリソース管理" class="headerlink" title="塾向けのリソース管理"></a>塾向けのリソース管理</h3><ul>
+<li>塾向けのLMSの要望を整理したが、CRMっぽい</li>
+<li>LMS<ul>
+<li>教師と生徒のやりとりがメイン</li>
+<li>出席、テスト、成果物などの管理</li>
+<li>代表OSS : <a href="https://moodle.org/" target="_blank" rel="external">moodle</a></li>
+</ul>
+</li>
+<li>CRM<ul>
+<li>教師と親(顧客)</li>
+<li>代表OSS : <a href="https://www.sugarcrm.com/" target="_blank" rel="external">SugarCRM</a></li>
+</ul>
+</li>
+<li>LMSとCRMの二本立てにした、データを共有するのがよい</li>
+</ul>
+<h2 id="15-45"><a href="#15-45" class="headerlink" title="15:45"></a>15:45</h2><h3 id="VPS内で貸し借りを管理したい"><a href="#VPS内で貸し借りを管理したい" class="headerlink" title="VPS内で貸し借りを管理したい"></a>VPS内で貸し借りを管理したい</h3><ul>
+<li>一般人向け</li>
+<li>100GBじゃ効かないデータサイズ → オブジェクトストレージは有効じゃない</li>
+<li><a href="https://www.sparkleshare.org/" target="_blank" rel="external">SparkleShare</a></li>
+</ul>
+<h3 id="さくらのクラウドの管理は難しい"><a href="#さくらのクラウドの管理は難しい" class="headerlink" title="さくらのクラウドの管理は難しい?"></a>さくらのクラウドの管理は難しい?</h3><ul>
+<li>CodeDojoでさくらのクラウドを使いたい(まだ、そういうことにしておいてください)</li>
+<li>さくらのクラウドの管理画面をつかって具体的な操作を説明した</li>
+<li>Sandboxで遊んでみよう</li>
+<li>スタートアップスクリプトで楽をしよう</li>
+<li>サブドメイン管理はDNSサービスをつかって管理すれば楽よね</li>
+<li>CentOS7のパブリックアーカイブを元にサーバーを作れば<br><code>firewalld</code>や<code>fail2ban</code>が有効になってるよ<ul>
+<li><a href="https://cloud-news.sakura.ad.jp/public_archive_iso/centos73-releasenote/" target="_blank" rel="external">https://cloud-news.sakura.ad.jp/public_archive_iso/centos73-releasenote/</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="Haskellで言語作ってるお話"><a href="#Haskellで言語作ってるお話" class="headerlink" title="Haskellで言語作ってるお話"></a>Haskellで言語作ってるお話</h3><ul>
+<li><a href="https://gist.github.com/Iruyan-Zak/095f451a88b98865a1b41d242d447bf7" target="_blank" rel="external">Haskellのサンプル</a> 解説を追加してます</li>
+<li><a href="https://github.com/kosen13s/tiny/" target="_blank" rel="external">tiny-lang のプロジェクト</a> のんびりやってますが、cloneするなら <code>stack ghci</code> で遊んでください（エントリポイント作ってません）</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;姫路IT系勉強会-2017-07&quot;&gt;&lt;a href=&quot;#姫路IT系勉強会-2017-07&quot; class=&quot;headerlink&quot; title=&quot;姫路IT系勉強会 2017.07&quot;&gt;&lt;/a&gt;姫路IT系勉強会 2017.07&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;開催日：2017
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="姫路IT系勉強会" scheme="https://histudy.github.io/tags/%E5%A7%AB%E8%B7%AFIT%E7%B3%BB%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加古川IT系インフラ勉強会 2017.07</title>
+    <link href="https://histudy.github.io/2017/07/09/kakogawa_infra/2017/07/"/>
+    <id>https://histudy.github.io/2017/07/09/kakogawa_infra/2017/07/</id>
+    <published>2017-07-08T15:00:00.000Z</published>
+    <updated>2017-08-19T15:12:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="加古川IT系インフラ勉強会-2017-07"><a href="#加古川IT系インフラ勉強会-2017-07" class="headerlink" title="加古川IT系インフラ勉強会 2017.07"></a>加古川IT系インフラ勉強会 2017.07</h1><ul>
+<li>開催日：2017/07/09</li>
+<li>司会：wate</li>
+<li>参加者数：参加者: 6名 / 学生: 1名 / Hangout: 1名</li>
+<li>備考：気付いたことなど、自由に記入をお願いします！</li>
+<li>Connpass: <a href="https://histudy.connpass.com/event/59608/" target="_blank" rel="external">https://histudy.connpass.com/event/59608/</a></li>
+<li>ハッシュタグ：#kakogawa_infra</li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://www.slideshare.net/zembutsu/docker-operation-and-introduciton-rancher-qpstudy-2015-06" target="_blank" rel="external">Rancher</a> でGUIでDockerを扱う</li>
+<li>Dockerのメリットは？</li>
+<li>terraformは難しい？</li>
+<li>インフラはそこまで頻繁に変わらない</li>
+<li><a href="https://my-netdata.io/" target="_blank" rel="external">NetData: Get control of your Linux Servers. Simple. Effective. Awesome.</a></li>
+<li><a href="https://nicolargo.github.io/glances/" target="_blank" rel="external">Glances - An Eye on your system</a></li>
+<li><a href="https://sense.com/" target="_blank" rel="external">Sense - Home Energy Monitor</a></li>
+<li>Terraformで既存の環境を管理したい時の注意あれば教えて欲しい</li>
+<li>Stack</li>
+<li>(log plz)</li>
+<li>マルチクラウドが進む？</li>
+<li>CLI</li>
+<li>CI</li>
+<li>ACL</li>
+<li>NTT comが出したDocker</li>
+<li>Dockerのイメージ更新</li>
+<li>OSがアップデート発生した場合の対応</li>
+<li>Ansibleのバージョン違いによる動作不良→あるある</li>
+<li>Slackでアップデートの通知を受け取るようにすると楽</li>
+<li>8月の発表は、Vagrant？</li>
+<li>現状、AWSのプラグインはノコギリ削除に伴い動かない</li>
+<li>bentoプロジェクトなら、綺麗な状態から始められる<br>-</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;加古川IT系インフラ勉強会-2017-07&quot;&gt;&lt;a href=&quot;#加古川IT系インフラ勉強会-2017-07&quot; class=&quot;headerlink&quot; title=&quot;加古川IT系インフラ勉強会 2017.07&quot;&gt;&lt;/a&gt;加古川IT系インフラ勉強会 2017.07&lt;/
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="加古川IT系インフラ勉強会" scheme="https://histudy.github.io/tags/%E5%8A%A0%E5%8F%A4%E5%B7%9DIT%E7%B3%BB%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>姫路IT系勉強会 2017.06</title>
+    <link href="https://histudy.github.io/2017/06/17/histudy/2017/06/"/>
+    <id>https://histudy.github.io/2017/06/17/histudy/2017/06/</id>
+    <published>2017-06-16T15:00:00.000Z</published>
+    <updated>2017-06-17T23:17:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="姫路IT系勉強会-2017-06"><a href="#姫路IT系勉強会-2017-06" class="headerlink" title="姫路IT系勉強会 2017.06"></a>姫路IT系勉強会 2017.06</h1><ul>
+<li>開催日：2017/06/17</li>
+<li>司会：wateさん(?)</li>
+<li>参加者数：参加者: 7名 / 学生: 1名 / Hangout: 1名(学生)</li>
+<li>備考：ご自由にご記入ください！！</li>
+<li>URL：<a href="https://hackmd.io/s/ryQRUr6lb" target="_blank" rel="external">https://hackmd.io/s/ryQRUr6lb</a></li>
+<li>ハッシュタグ：#histudy</li>
+</ul>
+<hr>
+<h2 id="13-30"><a href="#13-30" class="headerlink" title="13:30"></a>13:30</h2><ul>
+<li>準備</li>
+<li>自己紹介</li>
+</ul>
+<h2 id="14-00"><a href="#14-00" class="headerlink" title="14:00"></a>14:00</h2><h3 id="緩募-いい感じのgoogleアカウント"><a href="#緩募-いい感じのgoogleアカウント" class="headerlink" title="[緩募] いい感じのgoogleアカウント"></a>[緩募] いい感じのgoogleアカウント</h3><h3 id="キッチンとリビングで同じ動画を楽しみたい"><a href="#キッチンとリビングで同じ動画を楽しみたい" class="headerlink" title="キッチンとリビングで同じ動画を楽しみたい"></a>キッチンとリビングで同じ動画を楽しみたい</h3><ul>
+<li>非同期ならDLNAサーバ立てる？</li>
+<li>同期的には？<ul>
+<li>ラズパイで配信させれば再生端末のスペック次第でなんとか</li>
+</ul>
+</li>
+<li>VLCでストリーミング配信させればいいらしい<ul>
+<li>報告は来月</li>
+</ul>
+</li>
+</ul>
+<h3 id="Electronで作るバイナリのライセンス"><a href="#Electronで作るバイナリのライセンス" class="headerlink" title="Electronで作るバイナリのライセンス"></a>Electronで作るバイナリのライセンス</h3><ul>
+<li><p>基本的にオープンソースとして配布するのは簡単だが企業としてリリースするのは厳しい</p>
+</li>
+<li><p>ffmpegがGPLかLGPLかがにわかにはわからない</p>
+</li>
+<li><p>企業の体質によるので</p>
+<ul>
+<li>MITなどのライセンスだけに限定する</li>
+<li>オープンソースでリリースする</li>
+</ul>
+</li>
+</ul>
+<h3 id="Debian-Stretch-release-Pirty"><a href="#Debian-Stretch-release-Pirty" class="headerlink" title="Debian Stretch release Pirty"></a>Debian Stretch release Pirty</h3><ul>
+<li>明日あるよ！！</li>
+<li><a href="https://lists.debian.org/debian-devel-announce/2017/05/msg00002.html" target="_blank" rel="external">https://lists.debian.org/debian-devel-announce/2017/05/msg00002.html</a></li>
+<li><a href="https://bugs.debian.org/release-critical/" target="_blank" rel="external">https://bugs.debian.org/release-critical/</a> バグ状況？</li>
+<li>いつもどおりなので問題なし</li>
+<li>Debianのバグ報告はメールベース<ul>
+<li>だけど日本語で大丈夫だよ！</li>
+<li>質問に答えていくだけで</li>
+</ul>
+</li>
+</ul>
+<h3 id="複雑な構成のサーバーの意味は"><a href="#複雑な構成のサーバーの意味は" class="headerlink" title="複雑な構成のサーバーの意味は?"></a>複雑な構成のサーバーの意味は?</h3><ul>
+<li>負荷分散のため</li>
+<li><p>一箇所がこけても全部死なないようにしたい</p>
+</li>
+<li><p>大規模の場合、登場人物</p>
+</li>
+</ul>
+<ul>
+<li>LB ロードバランサー<ul>
+<li>最初に受けた要求をうまくさばくもの</li>
+<li>Elastic Load Balancing など</li>
+</ul>
+</li>
+<li>App アプリケーションサーバー<ul>
+<li>サービスのロジックのある部分</li>
+<li>メイン、サブなどにしておき負荷を分散させる</li>
+</ul>
+</li>
+<li>DB データベースサーバー<ul>
+<li>永続的な情報を管理する</li>
+<li>更新のみを行うもの、参照だけに対応するものなどに負荷を分散させる</li>
+<li>PostgreSQL, MariaDBなど</li>
+<li>オープンソースの検索エンジン／Elasticsearch</li>
+</ul>
+</li>
+<li>キャッシュサーバー<ul>
+<li>On Memoryで高速、一時的な情報を置く (揮発性)</li>
+<li>例えばセッションを管理</li>
+<li>HTTPはステートレスなのでどこかに識別子がいる</li>
+<li>ローカルに保存する場合は、クッキーなどで保持させる</li>
+</ul>
+</li>
+<li><p>メンテナンスの接続サービス</p>
+<ul>
+<li>死活監視 Hinemos</li>
+<li><a href="https://nicolargo.github.io/glances/" target="_blank" rel="external">https://nicolargo.github.io/glances/</a></li>
+</ul>
+</li>
+<li><p>ルータの帯域幅は変えられる</p>
+</li>
+</ul>
+<h2 id="15-30"><a href="#15-30" class="headerlink" title="15:30"></a>15:30</h2><h3 id="雑談"><a href="#雑談" class="headerlink" title="雑談"></a>雑談</h3><ul>
+<li>AWSをやりに転職したかと思ったら他社システムを保守しているでござるの巻</li>
+<li>すごーい！gitができる(ry</li>
+</ul>
+<h2 id="16-00"><a href="#16-00" class="headerlink" title="16:00"></a>16:00</h2><h3 id="16bit以下のLinuxシステムについて"><a href="#16bit以下のLinuxシステムについて" class="headerlink" title="16bit以下のLinuxシステムについて"></a>16bit以下のLinuxシステムについて</h3><ul>
+<li><p>目的</p>
+<ul>
+<li>学校で、C言語のstdlib.hのrandom関数の値の分布を見る課題が出た。</li>
+<li>プログラムを動作させるOSはLinuxに限るという指定があるが、調べてみると、WindowsやUNIXの一部ではrandomの返り値が16bitなんだそうだ。</li>
+<li>RAND_MAXが16bitであるようなLinuxのシステムはないだろうか？</li>
+</ul>
+</li>
+<li><p><a href="http://www.uclinux.org/" target="_blank" rel="external">$\mu$ C Linux？</a></p>
+</li>
+<li>Embedded Linux Kernel System ?<ul>
+<li><a href="http://elks.sourceforge.net/" target="_blank" rel="external">http://elks.sourceforge.net/</a></li>
+<li><a href="https://github.com/jbruchon/elks" target="_blank" rel="external">https://github.com/jbruchon/elks</a></li>
+</ul>
+</li>
+<li>Linux 上におれおれ乱数生成関数を実装すれば?<ul>
+<li><a href="https://oshiete.goo.ne.jp/qa/3139278.html" target="_blank" rel="external">https://oshiete.goo.ne.jp/qa/3139278.html</a><br>-</li>
+<li><a href="http://www001.upp.so-net.ne.jp/isaku/rand.html" target="_blank" rel="external">http://www001.upp.so-net.ne.jp/isaku/rand.html</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="Redmineでメールの設定がありませんって怒られるんですが・・・"><a href="#Redmineでメールの設定がありませんって怒られるんですが・・・" class="headerlink" title="Redmineでメールの設定がありませんって怒られるんですが・・・"></a>Redmineでメールの設定がありませんって怒られるんですが・・・</h3><ul>
+<li>Debian 8でパッケージ管理からインストールした。</li>
+<li>/etc/redmine/default/configuration.ymlに突っ込んだ<ul>
+<li>configuration.ymlに設定はどうなってる?</li>
+<li>せめてもう少し設定ファイルの内容なんかがわからんと、口頭レベルで聞いただけでは切り分けられんっす・・</li>
+</ul>
+</li>
+</ul>
+<h3 id="仕事とかで使っているFramework"><a href="#仕事とかで使っているFramework" class="headerlink" title="仕事とかで使っているFramework"></a>仕事とかで使っているFramework</h3><ul>
+<li>CakePHPとかZend Frameworkとか</li>
+<li>RailsをPHPに移したのがCakePHP<ul>
+<li>設定よりも規約</li>
+</ul>
+</li>
+<li>CakePHP 1系は移行がつらいやろ<ul>
+<li>PHPのバージョンも古い</li>
+<li>載せ替えもなし</li>
+<li>ってことは古いまま・・・</li>
+<li>Cent OS 6</li>
+</ul>
+</li>
+<li>移行の話<ul>
+<li>Cent OS 7に上げるのは時間の問題</li>
+<li>CakePHPは3系にしますよね</li>
+<li>要求されるPHPのバージョンは5.6以上のはず</li>
+<li>Remi案件</li>
+</ul>
+</li>
+<li><p>つらいのはどこも一緒かい</p>
+</li>
+<li><p>PHPのバージョンを大きく上げるとEUC-JPのデータを取り扱うのに挙動が</p>
+<ul>
+<li><a href="http://d.hatena.ne.jp/rui_hi/20111105/1320455951" target="_blank" rel="external">PHP 5.4におけるhtmlspecialchars()の問題</a></li>
+</ul>
+</li>
+<li><p>PHPはマイナーバージョンで破壊的な変更が</p>
+<ul>
+<li>CI回しておかないとアレ</li>
+<li>5.4へのアップデートで参照渡しの仕様変更→Pear(?)が死ぬ</li>
+<li>仕方ない、古いサーバを使うしか<ul>
+<li>リバースプロキシで繋げ！（）</li>
+<li>前段はCent7でWAFかけてヤバいリクエストを対策させる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Centのサポート期間の長さはリリースサイクルを壊す</p>
+</li>
+<li><p><a href="https://ghostinspector.com/" target="_blank" rel="external">UIテストをChromeからホイホイ書ける？ Ghost Inspector</a></p>
+</li>
+<li><p>IDE何使ってる？</p>
+<ul>
+<li>NetBeans<ul>
+<li><a href="http://plugins.netbeans.org/" target="_blank" rel="external">Pluginも検索すれば出てくる</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="http://laravel.jp/" target="_blank" rel="external">Larabel</a></p>
+<ul>
+<li>自由度が高いので規約決めるまでは難しい</li>
+</ul>
+</li>
+<li><a href="http://fuelphp.jp/" target="_blank" rel="external">FuelPHP.JP 日本語ドキュメント</a><ul>
+<li>規約より設定</li>
+</ul>
+</li>
+<li>Phalcon PHP Framework<ul>
+<li>最速らしい</li>
+<li>モジュールなのでリリース時に</li>
+</ul>
+</li>
+</ul>
+<h3 id="Webアプリをフルスクラッチするんだけど、MVCって何なの"><a href="#Webアプリをフルスクラッチするんだけど、MVCって何なの" class="headerlink" title="Webアプリをフルスクラッチするんだけど、MVCって何なの"></a>Webアプリをフルスクラッチするんだけど、MVCって何なの</h3><ul>
+<li>ﾀﾉｼｲﾖ</li>
+</ul>
+<h1 id="連絡事項"><a href="#連絡事項" class="headerlink" title="連絡事項"></a>連絡事項</h1><h2 id="加古川IT系インフラ勉強会-2017-07"><a href="#加古川IT系インフラ勉強会-2017-07" class="headerlink" title="加古川IT系インフラ勉強会 2017.07"></a>加古川IT系インフラ勉強会 2017.07</h2><ul>
+<li>日時 2017/07/08 18:00 - 21:00</li>
+<li>場所 (株)AWESOME</li>
+<li>URL <a href="https://histudy.connpass.com/event/59608/" target="_blank" rel="external">connpass</a></li>
+</ul>
+<h2 id="姫路IT系勉強会-2017-07"><a href="#姫路IT系勉強会-2017-07" class="headerlink" title="姫路IT系勉強会 2017.07"></a>姫路IT系勉強会 2017.07</h2><ul>
+<li>日時 2017/07/15 13:15 - 17:00</li>
+<li>場所 姫路獨協大学 駅前サテライト</li>
+<li>URL connpass(準備中)</li>
+</ul>
+<h2 id="加古川IT系インフラ勉強会-2017-08"><a href="#加古川IT系インフラ勉強会-2017-08" class="headerlink" title="加古川IT系インフラ勉強会 2017.08"></a>加古川IT系インフラ勉強会 2017.08</h2><ul>
+<li>加古川IT系インフラ勉強会 2017.08 は、<strong>お休み</strong>です。</li>
+</ul>
+<h2 id="姫路IT系勉強会-2017-08-大阪出張版"><a href="#姫路IT系勉強会-2017-08-大阪出張版" class="headerlink" title="姫路IT系勉強会 2017.08 (大阪出張版!)"></a>姫路IT系勉強会 2017.08 (大阪出張版!)</h2><ul>
+<li>日時 2017/08/19 予定</li>
+<li>場所 さくらインターネット 大阪本社 イベントスペース<ul>
+<li>大阪府大阪市北区大深町4−1 グランフロントタワーA 35階<ul>
+<li><a href="https://www.google.co.jp/maps/search/%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E5%A4%A7%E6%B7%B1%E7%94%BA4%E2%88%921+%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%BF%E3%83%AF%E3%83%BCA/@34.7049837,135.4935397,18z/data=!3m1!4b1?hl=ja&amp;authuser=0" target="_blank" rel="external">GoogleMap</a></li>
+<li><a href="https://openstreetmap.jp/map#zoom=17&amp;lat=34.70467&amp;lon=135.49617&amp;layers=0B0FF" target="_blank" rel="external">OpenStreetMap</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>URL connpass(準備中)</li>
+<li>今回は、さくらインターネットさんのイベントスペースをお借りして、開催します！</li>
+<li>会場のさくらインターネットさんは、最近引っ越しされたとのことですので、<strong>開催場所の間違い</strong>にご注意ください！</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;姫路IT系勉強会-2017-06&quot;&gt;&lt;a href=&quot;#姫路IT系勉強会-2017-06&quot; class=&quot;headerlink&quot; title=&quot;姫路IT系勉強会 2017.06&quot;&gt;&lt;/a&gt;姫路IT系勉強会 2017.06&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;開催日：2017
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="姫路IT系勉強会" scheme="https://histudy.github.io/tags/%E5%A7%AB%E8%B7%AFIT%E7%B3%BB%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加古川IT系インフラ勉強会 2017.06</title>
+    <link href="https://histudy.github.io/2017/06/10/kakogawa_infra/2017/06/"/>
+    <id>https://histudy.github.io/2017/06/10/kakogawa_infra/2017/06/</id>
+    <published>2017-06-09T15:00:00.000Z</published>
+    <updated>2017-06-17T23:09:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="加古川IT系インフラ勉強会-2017-06"><a href="#加古川IT系インフラ勉強会-2017-06" class="headerlink" title="加古川IT系インフラ勉強会 2017.06"></a>加古川IT系インフラ勉強会 2017.06</h1><ul>
+<li>開催日：2017/06/10</li>
+<li>司会：wate</li>
+<li>参加者数：参加者: 6名 / 学生: 1名 / Hangout: 1名</li>
+<li>備考：</li>
+<li>Connpass: <a href="https://histudy.connpass.com/event/53903/" target="_blank" rel="external">https://histudy.connpass.com/event/53903/</a></li>
+<li>ハッシュタグ：#kakogawa_infra</li>
+</ul>
+<hr>
+<ul>
+<li><p>!!! ご自由に追記をお願いします。 iii</p>
+</li>
+<li><p>さくらクラウドでTerraform</p>
+<ul>
+<li>資料: <a href="https://github.com/wate/sakura_sandbox" target="_blank" rel="external">sakura_sandbox / Wate - GitHub</a></li>
+<li>資料: <a href="https://sacloud.github.io/terraform-provider-sakuracloud/" target="_blank" rel="external">Terraform for さくらのクラウド</a></li>
+<li>資料: <a href="https://github.com/sacloud/usacloud" target="_blank" rel="external">Usacloud</a></li>
+<li>よく使うコマンド<ul>
+<li>terraform plan<ul>
+<li>実行計画を確認</li>
+</ul>
+</li>
+<li>terraform apply<ul>
+<li>実行</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>さくらの高火力</li>
+<li>その他<ul>
+<li><a href="https://github.com/zembutsu/sakura-terraform" target="_blank" rel="external">Terraform for Sakura Cloud ハンズオン資料 / zembutsu - GitHub</a></li>
+<li><a href="https://debianjp.connpass.com/event/59443/" target="_blank" rel="external">Debian 9 “Stretch” リリースパーティ in 関西 / Debian JP - connpass</a><ul>
+<li>2017/06/18(日) 13:00 ～ 19:00</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;加古川IT系インフラ勉強会-2017-06&quot;&gt;&lt;a href=&quot;#加古川IT系インフラ勉強会-2017-06&quot; class=&quot;headerlink&quot; title=&quot;加古川IT系インフラ勉強会 2017.06&quot;&gt;&lt;/a&gt;加古川IT系インフラ勉強会 2017.06&lt;/
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="加古川IT系インフラ勉強会" scheme="https://histudy.github.io/tags/%E5%8A%A0%E5%8F%A4%E5%B7%9DIT%E7%B3%BB%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>姫路IT系勉強会 2017.05</title>
+    <link href="https://histudy.github.io/2017/05/20/histudy/2017/05/"/>
+    <id>https://histudy.github.io/2017/05/20/histudy/2017/05/</id>
+    <published>2017-05-19T15:00:00.000Z</published>
+    <updated>2017-05-20T13:07:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="姫路IT系勉強会-2017-05"><a href="#姫路IT系勉強会-2017-05" class="headerlink" title="姫路IT系勉強会 2017.05"></a>姫路IT系勉強会 2017.05</h1><ul>
+<li>開催日：2017/05/20</li>
+<li>司会：</li>
+<li>参加者数：参加者: 7名 / 学生: 1名 / Hangout: 1名(学生)</li>
+<li>備考：ご自由にご記入ください！！</li>
+<li>URL：<a href="https://hackmd.io/s/ryQRUr6lb" target="_blank" rel="external">https://hackmd.io/s/ryQRUr6lb</a></li>
+<li>ハッシュタグ：#histudy</li>
+</ul>
+<hr>
+<h2 id="13-30"><a href="#13-30" class="headerlink" title="13:30"></a>13:30</h2><ul>
+<li><p>自己紹介</p>
+</li>
+<li><p>Windowsでマシなターミナルソフトおしえて</p>
+<ul>
+<li><p>git-bash (mintty) を使っているが、dockerを使っているがエラーがでる (→ winpty)</p>
+</li>
+<li><p><a href="https://mremoteng.org/" target="_blank" rel="external">mRemoteNG</a></p>
+</li>
+<li><a href="https://conemu.github.io/" target="_blank" rel="external">ConEmu</a><ul>
+<li>Windowsの黒い画面(DOS窓)用</li>
+</ul>
+</li>
+<li><a href="https://mridgers.github.io/clink/" target="_blank" rel="external">Clink</a><ul>
+<li>コマンド補完</li>
+<li>lua言語で拡張機能を開発可能</li>
+</ul>
+</li>
+<li>Microsoftとしては、PowerShell 使って欲しい?<ul>
+<li>SYNTAXがいまいち</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Debian の新しいのでないの?</p>
+<ul>
+<li>がんばってるよー<ul>
+<li>RCバグがなくなれば出るよ <a href="https://bugs.debian.org/release-critical/" target="_blank" rel="external">https://bugs.debian.org/release-critical/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>イベントを集めたい＠グランフロント</p>
+<ul>
+<li>堺筋本町→梅田グランフロントに引越し</li>
+<li>毎週イベントを開催したい<ul>
+<li>姫路IT系勉強会(xx時間拡張版) 出張版<ul>
+<li>司会：Wateさん</li>
+<li>Sakuraを使おう！</li>
+<li>8月開催予定</li>
+<li>姫路怖い＠大阪</li>
+</ul>
+</li>
+<li>関西Debian</li>
+<li>眼鏡イベント<ul>
+<li>眼鏡っ娘イベント</li>
+<li>IoTの実証実験(福井県鯖江はメガネとオープンデータ)</li>
+<li>とある高火力</li>
+</ul>
+</li>
+<li>関西Lispユーザー</li>
+</ul>
+</li>
+<li>大阪・瓦町でコワーキングスペースとしてオフィスを開放している人に話を聞いたことがあります。その人は会場貸賃を取らない代わりに技術的な問題を利用者に解決してもらうと言っていました。</li>
+<li>設備：コワーキングスペース、プロジェクタ、ネット回線は用意できる</li>
+<li><a href="https://chrome.google.com/webstore/detail/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%AB%E3%83%91%E3%83%8D%E3%83%AB%E3%83%AA%E3%83%B3%E3%82%AF/lpjekhokckhcokjklglljenadonhfcdb" target="_blank" rel="external">Chrome：さくらのコントロールパネルリンク</a></li>
+<li>マストドンの話が以下略<ul>
+<li>マストドンは<a href="http://muziyoshiz.hatenablog.com/entry/2017/04/30/143632" target="_blank" rel="external">OStatus</a>互換でほかに<a href="https://git.gnu.io/gnu/gnu-social" target="_blank" rel="external">GNU Social</a>があるよ<ul>
+<li>GNU Social使ってる人は<a href="https://quitter.se/nogajun" target="_blank" rel="external">います</a></li>
+<li><a href="https://git.gnu.io/h2p/Qvitter" target="_blank" rel="external">qvitter</a>プラグインでTwitterライクに、<a href="https://github.com/hannesmannerheim/quitim" target="_blank" rel="external">quitim</a>プラグインでInstagramライクになるよ</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>さくらIoTハンズオン<ul>
+<li>sakura.io体験ハンズオン＠大阪</li>
+<li><a href="https://sakura.doorkeeper.jp/events/60523" target="_blank" rel="external">Doorkeeper</a></li>
+<li>2017/06/16(金) 15:00 ～ 18:30</li>
+<li>さくらインターネット 大阪本社</li>
+</ul>
+</li>
+<li>農業の<a href="https://www.facebook.com/profile.php?id=100005703193676" target="_blank" rel="external">林田さん</a><ul>
+<li>農業監視IoT</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="15-00"><a href="#15-00" class="headerlink" title="15:00"></a>15:00</h2><ul>
+<li>たくぼさん来たよ<ul>
+<li><a href="https://github.com/takubo" target="_blank" rel="external">https://github.com/takubo</a></li>
+<li><a href="https://github.com/bolknote/SedChess/blob/master/chess.sed" target="_blank" rel="external">SedChess</a><ul>
+<li>ロシアの人が作ったsed製チェスを読むためにsedデバッガを作った</li>
+<li>a2a3 と打つと、a2の駒がa3に移動します</li>
+</ul>
+</li>
+<li><a href="https://github.com/takubo/awkmine" target="_blank" rel="external">https://github.com/takubo/awkmine</a></li>
+</ul>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;姫路IT系勉強会-2017-05&quot;&gt;&lt;a href=&quot;#姫路IT系勉強会-2017-05&quot; class=&quot;headerlink&quot; title=&quot;姫路IT系勉強会 2017.05&quot;&gt;&lt;/a&gt;姫路IT系勉強会 2017.05&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;開催日：2017
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="姫路IT系勉強会" scheme="https://histudy.github.io/tags/%E5%A7%AB%E8%B7%AFIT%E7%B3%BB%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加古川IT系インフラ勉強会 2017.05</title>
+    <link href="https://histudy.github.io/2017/05/13/kakogawa_infra/2017/05/"/>
+    <id>https://histudy.github.io/2017/05/13/kakogawa_infra/2017/05/</id>
+    <published>2017-05-12T15:00:00.000Z</published>
+    <updated>2017-05-20T13:05:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="加古川IT系インフラ勉強会-2017-05"><a href="#加古川IT系インフラ勉強会-2017-05" class="headerlink" title="加古川IT系インフラ勉強会 2017.05"></a>加古川IT系インフラ勉強会 2017.05</h1><ul>
+<li>開催日：2017/05/13</li>
+<li>司会：wate</li>
+<li>参加者数：参加者: 3名 / 学生: 0名 / Hangout: 0名</li>
+<li>備考：今日の勉強会のメモなど、ご自由にご記入ください</li>
+<li>ハッシュタグ：#kakogawa_infra</li>
+</ul>
+<hr>
+<p>闇が深い・・・</p>
+<hr>
+<h2 id="連絡事項（次回予定など）"><a href="#連絡事項（次回予定など）" class="headerlink" title="連絡事項（次回予定など）"></a>連絡事項（次回予定など）</h2><ul>
+<li>[姫路IT系勉強会 2017.06]</li>
+<li>[姫路IT系インフラ勉強会 2017.06]</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;加古川IT系インフラ勉強会-2017-05&quot;&gt;&lt;a href=&quot;#加古川IT系インフラ勉強会-2017-05&quot; class=&quot;headerlink&quot; title=&quot;加古川IT系インフラ勉強会 2017.05&quot;&gt;&lt;/a&gt;加古川IT系インフラ勉強会 2017.05&lt;/
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="加古川IT系インフラ勉強会" scheme="https://histudy.github.io/tags/%E5%8A%A0%E5%8F%A4%E5%B7%9DIT%E7%B3%BB%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>姫路IT系勉強会 2017.04</title>
+    <link href="https://histudy.github.io/2017/04/15/histudy/2017/04/"/>
+    <id>https://histudy.github.io/2017/04/15/histudy/2017/04/</id>
+    <published>2017-04-14T15:00:00.000Z</published>
+    <updated>2017-04-15T23:49:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="姫路IT系勉強会-2017-04"><a href="#姫路IT系勉強会-2017-04" class="headerlink" title="姫路IT系勉強会 2017.04"></a>姫路IT系勉強会 2017.04</h1><ul>
+<li>開催日：2017/04/15</li>
+<li>司会：</li>
+<li>参加者数：参加者: 8名 / 学生: 1名 / Hangout: 0名</li>
+<li>備考：ご自由にご記入ください！！</li>
+<li>URL：<a href="https://hackmd.io/s/Hypo7Eqje" target="_blank" rel="external">https://hackmd.io/s/Hypo7Eqje</a></li>
+<li>ハッシュタグ：#histudy</li>
+</ul>
+<hr>
+<h2 id="13-30"><a href="#13-30" class="headerlink" title="13:30"></a>13:30</h2><ul>
+<li>自己紹介</li>
+</ul>
+<hr>
+<h2 id="14-00"><a href="#14-00" class="headerlink" title="14:00"></a>14:00</h2><ul>
+<li><p>トレンドを教えて！</p>
+<ul>
+<li><p>デスクトップアプリ開発</p>
+<ul>
+<li><p>Electron</p>
+<ul>
+<li><p><a href="https://medium.com/japan/2016%E5%B9%B4%E3%81%ABjavascript%E3%82%92%E5%AD%A6%E3%81%B6%E3%81%A8%E3%81%93%E3%82%93%E3%81%AA%E6%84%9F%E3%81%98-b969f5767d7c" target="_blank" rel="external">2016年にJavaScriptを学ぶとこんな感じ – Medium Japan – Medium</a></p>
+<blockquote>
+<p>-いいさ。どうせ数年後には俺達はみんなElmかWeAssemblyを使っているだろうからな。<br>バックエンドに戻ることにするよ。こんなに多くの変更やバージョンやエディションやコンパイラやトランスパイラを僕には扱えないよ。こんなのにずっとついていくなんて考えられないよ、JavaScriptのコミュニティは狂ってる。</p>
+</blockquote>
+</li>
+<li><p><a href="http://paiza.hatenablog.com/entry/2015/03/11/Backbone_JS%E3%81%8B%E3%82%89Angular2%E3%81%BE%E3%81%A7%E3%80%81%E5%85%A89%E5%A4%A7JavaScript%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%92%E6%9B%B8%E3%81%8D%E6%AF%94%E3%81%B9" target="_blank" rel="external">Backbone.JSからAngular2まで、全9大JavaScriptフレームワークを書き比べた!</a></p>
+</li>
+</ul>
+</li>
+<li><p>Golang</p>
+</li>
+</ul>
+</li>
+<li>Web業界<ul>
+<li>マテリアルデザイン</li>
+<li>フラットデザインとの違い?<ul>
+<li>フラットは紙イメージ。</li>
+<li>マテリアルは、その紙が階層をもって重なっているイメージ</li>
+</ul>
+</li>
+<li>デザインは設計でみため(装飾)だけではない<ul>
+<li>伝えたいこと(ミッション)を情報を整理して伝わるように配置するという設計がデザイン</li>
+</ul>
+</li>
+<li>参考. <a href="https://matome.naver.jp/odai/2142379522980270301" target="_blank" rel="external">Googleマテリアルデザインとフラットデザインって結局何が違うの？UI/UX</a></li>
+</ul>
+</li>
+<li>インフラ<ul>
+<li>docker<ul>
+<li>OracleDB-&gt;postgresql</li>
+<li>NewRelic からガチ監視のZabbix ?</li>
+<li>docker-compose 良さそう!?</li>
+</ul>
+</li>
+<li>クラウド</li>
+</ul>
+</li>
+<li>フロントエンド<ul>
+<li>JS<ul>
+<li>君たちの愛したjQueryは死んだ！なぜだ!?そして今js世は現在群雄割拠の乱立状態(戦国時代)</li>
+<li>3ヶ月勉強しないともう置いていかれる</li>
+<li>薄いライブラリが受けている傾向</li>
+<li>重量級だと学習コストが高い</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>サーバーサイド<ul>
+<li>PHP</li>
+<li>NodeJS</li>
+<li>Python</li>
+<li>Ruby</li>
+<li>Rails</li>
+<li>Go<ul>
+<li>ベター C言語として有能</li>
+<li>モバイルのゲーム会社でも結構使ってるよ！(Go勉強会で知った)</li>
+</ul>
+</li>
+<li>C++</li>
+<li>Elixir<ul>
+<li>Elixir Confでも「性能の必要な案件の99%はいずれGoで良くなる。Elixirの需要は1%でいい」と登壇者が発言</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>世間様のトレンド<ul>
+<li>なんちゃらR<ul>
+<li>ハードウェアなどの環境が必要なのでなかなか普及しない</li>
+<li>AR</li>
+<li>VR</li>
+<li>MR</li>
+</ul>
+</li>
+<li>IoT<ul>
+<li>LT勉強会が関西でも盛ん</li>
+<li>Node.js使ってサクットモックアップ作るのが多い感じ。製品化の際はC++とかで</li>
+</ul>
+</li>
+<li>BigData</li>
+<li>AI</li>
+<li>Mastodon<ul>
+<li>先駆けて mastodon.jp ドメイン取ってはじめた人が勝ち組になる瞬間を見た</li>
+</ul>
+</li>
+<li>政府的にはテレワーク<ul>
+<li>企画を出して通ると補助金が結構貰えるよ!! (主に総務省管轄)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Joy,Inc.について</p>
+<ul>
+<li>Amazon <a href="https://www.amazon.co.jp/%E3%82%B8%E3%83%A7%E3%82%A4-%E3%82%A4%E3%83%B3%E3%82%AF-%E5%BD%B9%E8%81%B7%E3%82%82%E9%83%A8%E7%BD%B2%E3%82%82%E3%81%AA%E3%81%84%E5%85%A8%E5%93%A1%E4%B8%BB%E5%BD%B9%E3%81%AE%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88-%E3%83%AA%E3%83%81%E3%83%A3%E3%83%BC%E3%83%89-%E3%82%B7%E3%82%A7%E3%83%AA%E3%83%80%E3%83%B3-ebook/dp/B01N12YJO4/ref=sr_1_1?ie=UTF8&amp;qid=1492233936&amp;sr=8-1&amp;keywords=joy+inc" target="_blank" rel="external">ジョイ・インク</a></li>
+<li>参考. <a href="https://kuranuki.sonicgarden.jp/2016/12/joyinc.html" target="_blank" rel="external">Joy,Inc.（ジョイ・インク）役職も部署もない全員主役のマネジメント</a></li>
+<li>現代版の<a href="https://www.amazon.co.jp/dp/489346941X" target="_blank" rel="external">リカルド・セムラー 奇跡の経営 一週間毎日が週末発想のススメ</a> っぽい</li>
+<li>個人的には 37シグナルズの「<a href="https://www.amazon.co.jp/dp/415209267X" target="_blank" rel="external">小さなチーム、大きな仕事</a>」の考え方が好き by.ききき</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Electronを始めたいので、ノウハウありませんか？<ul>
+<li>セキュリティ<ul>
+<li><a href="http://developers.mobage.jp/blog/electron-security" target="_blank" rel="external">Electronのセキュリティは難しい？</a></li>
+<li><a href="http://qiita.com/tkiryu/items/697174c9539deed50bd0" target="_blank" rel="external">Electronの基本/セキュリティ/エンタープライズ</a></li>
+</ul>
+</li>
+<li>メリット<ul>
+<li>WEB業界の人はWEBで培った技術が適用できる</li>
+</ul>
+</li>
+<li>デメリット<ul>
+<li>UIを考えるには、CSSなどのライブラリの知識が必要</li>
+<li>JSは型情報がないのでTypescript使え</li>
+</ul>
+</li>
+<li>とりあえずやってみる?</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>ゲーム会社ってけっこうGolang使ってるんだね。Go たーのしー<ul>
+<li><a href="https://umedago.connpass.com/event/53002/presentation/" target="_blank" rel="external">Umeda.goの勉強会資料 -&gt;</a><ul>
+<li>静的解析のLTの資料あった <a href="https://www.slideshare.net/takuyaueda967/go-74970321?ref=https://umedago.connpass.com/event/53002/presentation/" target="_blank" rel="external">goパッケージで型情報を用いたソースコード検索を実現する</a><ul>
+<li><code>静的解析</code>: コードを実行せずに調べる</li>
+</ul>
+</li>
+<li>Go+QtでGuiツールつくるLTの資料 <a href="https://www.slideshare.net/YoshinoriSato5/qt-74978336?ref=https://umedago.connpass.com/event/53002/presentation/" target="_blank" rel="external">Qtクッキング</a></li>
+</ul>
+</li>
+<li><a href="http://qiita.com/methane/items/b627f20457873a504638" target="_blank" rel="external">Why Go?</a></li>
+<li>コード自動生成ツール</li>
+<li>動作環境の構築が楽</li>
+<li>Unity + Go で開発してるゲーム会社さんもあったので、jsツラミならいっそGoにしてはどうだろう？<ul>
+<li>FYI. <a href="http://golang.jp/install" target="_blank" rel="external">Go言語のインストール - golang.jp</a></li>
+<li>FYI. <a href="http://qiita.com/Jxck_/items/02185f51162e92759ebe" target="_blank" rel="external">Go のクロスコンパイル環境構築</a><br>Mac 👉 <code>brew install go --cross-compile-all</code></li>
+<li><a href="http://unknownplace.org/archives/golang-cross-compiling.html" target="_blank" rel="external">Goはクロスコンパイルが簡単</a><blockquote>
+<p>Linux - amd64 用のバイナリを作るには、 <code>GOOS=linux GOARCH=amd64 go build hello.go</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="15-00"><a href="#15-00" class="headerlink" title="15:00"></a>15:00</h2><ul>
+<li>新入生に吹き込むと面白い話は？<ul>
+<li>ジャンルは?<ul>
+<li>インフラ</li>
+<li>プログラミング</li>
+</ul>
+</li>
+<li>勉強会に参加<ul>
+<li>個人的にはLT系の勉強会やNode学園のような初心者ウェルカムの入るのをオススメしたい。フリートークはマニアックな話になりがちなので、新入生が難しすぎる〜ってなると続かなくなるので。</li>
+</ul>
+</li>
+<li>勉強会を開催する<ul>
+<li>先輩後輩関係なしに最近試してみた技術とかをLT + フィードバック (GoogleFormとかでフィードバック・アンケートをちゃんと取ろう)</li>
+<li>LTの資料にはネタ画像を入れるんだ！ 絶対だぞ!!</li>
+</ul>
+</li>
+<li>若手シェル芸人育成</li>
+<li>なんとか芸人</li>
+<li>面白い＝自分の知らない事を教えてくれる</li>
+<li>LISP = 哲学者 = ? <a href="http://www.lisperati.com/logo.html" target="_blank" rel="external">logo</a></li>
+<li>姫路IT系勉強会のメンバーを講師として呼べばいい</li>
+<li>KOFなどの催しものに参加する</li>
+<li>Project Euler の実行速度で競技する <a href="https://projecteuler.net/" target="_blank" rel="external">About Project Euler</a></li>
+<li>各種言語で課題にチャレンジするとコメントがもらえる、Exercism io <a href="http://www.exercism.io/" target="_blank" rel="external">Exercism io</a></li>
+<li>最新技術や情報には、英語が必要だという話<br>*</li>
+</ul>
+</li>
+<li>社内勉強会を初めたよ<ul>
+<li>情報共有はwikiに書け！ -&gt; Qiita team or esa.io or gitのwiki とか色々あるよ</li>
+<li>GitHubを社内で徹底してつかうには？の話？</li>
+<li>社内勉強会があった経験のメモ<ul>
+<li>TOMでは社内でLTをする勉強会をしてます。デザイナーも営業の人もスプレッドシートのイケてる使い方とかLTします<ul>
+<li>FYI. <a href="http://blog.otakumode.com/tags/%E7%A4%BE%E5%86%85%E5%8B%89%E5%BC%B7%E4%BC%9A/" target="_blank" rel="external">TOM BLOG - 社内勉強会</a></li>
+</ul>
+</li>
+<li>某社ではProject Eulerをプログラムで解くEuler王選手権とかコードゴルフ選手権とかしてた。褒賞を付けると盛り上がる</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="16-00"><a href="#16-00" class="headerlink" title="16:00"></a>16:00</h2><ul>
+<li><p>Mastodon</p>
+<ul>
+<li>アップされる投稿に問題が合った場合の法的な問題が気になる…<ul>
+<li>(日本人が増えてきてるからね…..)</li>
+<li>特定の界隈に特化したキラキラッターはとても平和 <a href="https://files.kirakiratter.com/media_attachments/files/000/003/537/original/96628ad948110ea7.png?1492238187" target="_blank" rel="external">参加者がCSS作り始める</a></li>
+</ul>
+</li>
+<li><a href="https://mastodon.social/" target="_blank" rel="external">Mastdon</a></li>
+<li>MastodonはOStatusプロトコルのマイクロブログサービスだよ<ul>
+<li><a href="https://ja.wikipedia.org/wiki/OStatus" target="_blank" rel="external">OStatus</a></li>
+<li><a href="http://hitoasa.hateblo.jp/entry/20101013/1286950786" target="_blank" rel="external">OStatusの仕様をかいつまんで適当に和訳するよ</a></li>
+</ul>
+</li>
+<li><a href="http://www.itmedia.co.jp/news/articles/1704/14/news115.html" target="_blank" rel="external">日本最大の「マストドン」サーバがクラウド移転へ　「データ消えるかも」</a></li>
+</ul>
+</li>
+<li><p>インフラをつくるのを覚えたい</p>
+<ul>
+<li>DockerとNginxどちらから学習始めるのがいい感じ？</li>
+<li><a href="http://qiita.com/y_hokkey/items/d51e69c6ff4015e85fce" target="_blank" rel="external">docker-composeを使うと複数コンテナの管理が便利に</a></li>
+<li><a href="https://teratail.com/sakura-cloud" target="_blank" rel="external">インフラ覚えたいなら、さくらを契約して、クーポンでクラマス！</a></li>
+</ul>
+</li>
+<li><p>サービスとして公開する際の基本的にしておくべきセキュリティ項目が知りたい</p>
+<pre><code>* [Dockerでホストを乗っ取られた](http://qiita.com/titilat/items/f4f94a0cee9049125156)
+* これやればOK？ -&gt; [【さくらのVPS】サーバの初期設定ガイド](https://help.sakura.ad.jp/hc/ja/articles/206208181--%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEVPS-%E3%82%B5%E3%83%BC%E3%83%90%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A%E3%82%AC%E3%82%A4%E3%83%89) 足りないものがあれば↓にプリーズ
+* 22番ポートは別に開けなくてもOK 外部には80/443だけ開ければ
+    * 22番を開けてしまうと死ぬほど怪しいアクセスがくるのでSSHを外に出す場合は違うポートで出してね
+* ただDockerを使うとインフラが多重化されるのでトラブルシュートは大変
+* CentOS6はつらくなるぞ！
+</code></pre></li>
+</ul>
+<h3 id="告知タイム"><a href="#告知タイム" class="headerlink" title="告知タイム"></a>告知タイム</h3><ul>
+<li>大阪・広島が結構盛んだよ! <a href="https://iotlt.connpass.com/" target="_blank" rel="external">IoT縛りの勉強会! IoTLT</a>  <pre><code>大阪Iotは学生さんが主体でやってるから、学徒で押しかけるとイイぞ。学生枠あるし。
+</code></pre></li>
+<li>大阪でもあるよ！ <a href="https://nodejs.connpass.com/" target="_blank" rel="external">東京Node学園</a></li>
+<li>新宿.goの関西会 <a href="https://umedago.connpass.com/" target="_blank" rel="external">Umeda.go</a></li>
+<li>アプリを作るもくもく会 <a href="https://okmoku.connpass.com/" target="_blank" rel="external">岡山モバイルアプリ開発勉強会</a></li>
+<li>SQL大好き！ <a href="http://sqlworld.org/event/20170418/" target="_blank" rel="external">SQLWorld★大阪#41</a></li>
+<li>ワンライナーたーのしー！<a href="https://atnd.org/events/86778" target="_blank" rel="external">シェル芸大阪サテライト</a></li>
+<li>Lisp ユーザー会第一回<a href="https://kansai-lisp-useres.connpass.com/event/51450/" target="_blank" rel="external">Kansai Lisp user会</a></li>
+<li>神戸は割とイマドキの言語もカバーしてた <a href="https://kobe-rust.connpass.com/event/54231/" target="_blank" rel="external">神戸Rustの会 MeetUp #2</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;姫路IT系勉強会-2017-04&quot;&gt;&lt;a href=&quot;#姫路IT系勉強会-2017-04&quot; class=&quot;headerlink&quot; title=&quot;姫路IT系勉強会 2017.04&quot;&gt;&lt;/a&gt;姫路IT系勉強会 2017.04&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;開催日：2017
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="姫路IT系勉強会" scheme="https://histudy.github.io/tags/%E5%A7%AB%E8%B7%AFIT%E7%B3%BB%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加古川IT系インフラ勉強会 2017.04</title>
+    <link href="https://histudy.github.io/2017/04/08/kakogawa_infra/2017/04/"/>
+    <id>https://histudy.github.io/2017/04/08/kakogawa_infra/2017/04/</id>
+    <published>2017-04-07T15:00:00.000Z</published>
+    <updated>2017-04-15T23:56:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="加古川IT系インフラ勉強会-2017-04"><a href="#加古川IT系インフラ勉強会-2017-04" class="headerlink" title="加古川IT系インフラ勉強会 2017.04"></a>加古川IT系インフラ勉強会 2017.04</h1><ul>
+<li>開催日：2017/04/08</li>
+<li>司会：wate</li>
+<li>参加者数：参加者: 6名 / 学生: 0名 / Hangout: 1名</li>
+<li>備考：今日の勉強会のメモなど、ご自由にご記入ください</li>
+<li>ハッシュタグ：#kakogawa_infra</li>
+</ul>
+<hr>
+<p>Ansibleを使ってみよう！<br><a href="https://github.com/histudy/ansible-hands-on" target="_blank" rel="external">https://github.com/histudy/ansible-hands-on</a></p>
+<hr>
+<h2 id="連絡事項（次回予定など）"><a href="#連絡事項（次回予定など）" class="headerlink" title="連絡事項（次回予定など）"></a>連絡事項（次回予定など）</h2><ul>
+<li>[姫路IT系勉強会 2017.05]</li>
+<li>[姫路IT系インフラ勉強会 2017.05]</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;加古川IT系インフラ勉強会-2017-04&quot;&gt;&lt;a href=&quot;#加古川IT系インフラ勉強会-2017-04&quot; class=&quot;headerlink&quot; title=&quot;加古川IT系インフラ勉強会 2017.04&quot;&gt;&lt;/a&gt;加古川IT系インフラ勉強会 2017.04&lt;/
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="加古川IT系インフラ勉強会" scheme="https://histudy.github.io/tags/%E5%8A%A0%E5%8F%A4%E5%B7%9DIT%E7%B3%BB%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>姫路IT系勉強会 2017.03</title>
+    <link href="https://histudy.github.io/2017/03/18/histudy/2017/03/"/>
+    <id>https://histudy.github.io/2017/03/18/histudy/2017/03/</id>
+    <published>2017-03-17T15:00:00.000Z</published>
+    <updated>2017-03-18T13:29:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li>開催日：2017/03/18</li>
+<li>司会：</li>
+<li>参加者数：参加者: 13名 / 学生: 3名 / Hangout: 0名</li>
+<li>備考：ご自由にご記入ください！！</li>
+<li>URL：<a href="https://hackmd.io/s/Hypo7Eqje" target="_blank" rel="external">https://hackmd.io/s/Hypo7Eqje</a></li>
+<li>ハッシュタグ：#histudy</li>
+</ul>
+<hr>
+<h2 id="13-30"><a href="#13-30" class="headerlink" title="13:30"></a>13:30</h2><ul>
+<li>自己紹介</li>
+</ul>
+<hr>
+<h2 id="14-00"><a href="#14-00" class="headerlink" title="14:00"></a>14:00</h2><ul>
+<li>IT業界への就職へ<ul>
+<li>未経験ですが、IT業界への就職を目指しています。</li>
+<li>どのような企業を目指すのが良いでしょうか？</li>
+<li>BtoB, BtoC</li>
+<li>R言語</li>
+<li>マーケティング</li>
+<li>IT系に限らず、研究職などのデータ解析に進む方が吉？</li>
+<li>統計分析している企業や部署に行く方がいい？</li>
+<li>Web系のマーケティングがいい？</li>
+<li>機械学習の分野</li>
+<li>データサイエンティスト</li>
+<li>神戸R</li>
+<li>勉強会やイベントで知り合いを作ってきくといい</li>
+<li>PyDATA Osaka<ul>
+<li><a href="https://www.meetup.com/ja-JP/PyData-Osaka/" target="_blank" rel="external">PyData Osaka (大阪市) | Meetup</a></li>
+</ul>
+</li>
+<li>参考<ul>
+<li>Ref. <a href="http://qiita.com/stkdev/items/6aba2c1db2fa056170ae" target="_blank" rel="external">プログラマのためのR言語</a></li>
+<li>Ref. <a href="http://www.weblio.jp/content/%E3%82%8C%E3%81%93%E3%82%81%E3%82%93%E3%81%A9" target="_blank" rel="external">レコメンド</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="これから先、未来に覚えておけばいい言語はなにか？"><a href="#これから先、未来に覚えておけばいい言語はなにか？" class="headerlink" title="これから先、未来に覚えておけばいい言語はなにか？"></a>これから先、未来に覚えておけばいい言語はなにか？</h3><ul>
+<li>未来に生き残る言語を教えてほしい(WEB系)</li>
+<li>ネタでいうならJavaScript(笑)</li>
+<li>インフラに行こうぜ！<ul>
+<li>最低限、自分だけでサーバー構築できる技術も必要</li>
+<li>ShellぐらいならAnsible, Chefとかを覚えた方がいい</li>
+<li>WindowsならPowerShell, Power系ツールが使えるといいかもね</li>
+</ul>
+</li>
+<li>収入源のリスク分散（ポートフォリオ）<ul>
+<li>１つの仕事がなくなっても大丈夫な状態を目指す</li>
+</ul>
+</li>
+<li>お客さんのインフラを作る→ぜったいに、にがさない</li>
+<li>Google Analyticsがわかるようになっておく</li>
+<li>クラウドデザインパターン<ul>
+<li>書籍: <a href="http://www.amazon.co.jp/dp/4822277372/" target="_blank" rel="external">Amazon Web Services クラウドデザインパターン設計ガイド　改訂版</a></li>
+</ul>
+</li>
+<li><a href="https://www.conoha.jp/" target="_blank" rel="external">ConoHa</a>, <a href="https://www.idcf.jp/cloud/" target="_blank" rel="external">IDCFクラウド</a>, <a href="http://cloud.sakura.ad.jp/" target="_blank" rel="external">さくらのクラウド</a><ul>
+<li>日本語でも大丈夫</li>
+<li>IDCF安い</li>
+</ul>
+</li>
+<li>PHP, C++, C#, JQuery<ul>
+<li><a href="https://www.typescriptlang.org/" target="_blank" rel="external">TypeScript</a>!</li>
+<li>JavaScriptに型チェックを付ける<ul>
+<li>Flowtype<ul>
+<li><a href="http://blog.mmmcorp.co.jp/blog/2016/03/25/static-type-check-with-flow-type/" target="_blank" rel="external">Flowtypeに入門してJavaScriptコードで静的型付けの恩恵をうけるところまで | MMMブログ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Visual Studio Code</li>
+</ul>
+</li>
+<li>NativeApp<ul>
+<li>Go言語</li>
+<li>Electron</li>
+</ul>
+</li>
+</ul>
+<h3 id="韓国に行ってきた話"><a href="#韓国に行ってきた話" class="headerlink" title="韓国に行ってきた話"></a>韓国に行ってきた話</h3><ul>
+<li>Korea Community Day<ul>
+<li>[レポート] <a href="http://gihyo.jp/admin/serial/01/ubuntu-recipe/0462" target="_blank" rel="external">http://gihyo.jp/admin/serial/01/ubuntu-recipe/0462</a></li>
+</ul>
+</li>
+<li>参加費が必要で事前申し込み必要<ul>
+<li>サイトが全部韓国語 → Google翻訳</li>
+<li>費用が韓国国内のカードのみ → メールで相談して現金払い</li>
+</ul>
+</li>
+<li>大都会岡山空港はいいぞ<ul>
+<li>expediaで飛行機チケットと宿の予約だけして行きました</li>
+<li>ゲストハウスの宿代込み3泊4日で35000円でした</li>
+</ul>
+</li>
+<li>看板やセッションスケジュールが張ってあるのはいいカンファレンス</li>
+<li>大半が20代の参加者</li>
+<li>Google翻訳の音声入力でやりとり<ul>
+<li>助詞を抜かずにしゃべると伝わる</li>
+</ul>
+</li>
+<li>英語もだいたい通じます<ul>
+<li>お互いネイティブじゃないのでブロークンでも大丈夫</li>
+</ul>
+</li>
+</ul>
+<h3 id="MicrosoftのTeamsってどうですか"><a href="#MicrosoftのTeamsってどうですか" class="headerlink" title="MicrosoftのTeamsってどうですか"></a>MicrosoftのTeamsってどうですか</h3><ul>
+<li>Microsoftさんチャットツールとかええ加減統合しなさい</li>
+</ul>
+<hr>
+<h2 id="15：15"><a href="#15：15" class="headerlink" title="15：15"></a>15：15</h2><h3 id="社内データ分析基盤を作ろう"><a href="#社内データ分析基盤を作ろう" class="headerlink" title="社内データ分析基盤を作ろう"></a>社内データ分析基盤を作ろう</h3><ul>
+<li>PostgreSQL + 他 / docker でデータ分析基盤の業務アプリを作成する<ul>
+<li>PostgreSQLはいいぞ</li>
+</ul>
+</li>
+<li>トレンドプロジェクト（熱い）</li>
+<li>データの可視化<ul>
+<li>Re:dash<ul>
+<li>Ref. <a href="httpd//redash.io/">Redash</a></li>
+</ul>
+</li>
+<li>Superset<ul>
+<li>Ref. <a href="https://github.com/airbnb/superset" target="_blank" rel="external">Superset</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>社内データベースの読み込みがアレ<ul>
+<li>CSVはアレ</li>
+<li>見せてはいけないデータがある</li>
+</ul>
+</li>
+<li>Redmineとかにあるバグトラッキングシステムの所要時間の管理<ul>
+<li>時間管理ツール<a href="https://toggl.com/" target="_blank" rel="external">Toggl</a></li>
+</ul>
+</li>
+<li>ちゃぶ台返し検知システム</li>
+<li>社員の活動状態監視のために<ul>
+<li>H社さんのディストピア感あふれるソリューションの数々</li>
+</ul>
+</li>
+<li>会社全体のスケジュールを見たい<ul>
+<li>プロジェクトごとは管理されている</li>
+<li>Redmineで全プロジェクトを串刺してみたい<ul>
+<li>Redmineだと粒度が細かい</li>
+<li>チケットの担当者で集約してから見る？</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>運用ルールが統一できてない<ul>
+<li>簡単にチケット登録できるような仕組みの導入</li>
+<li>ExcelをUIとして使う</li>
+<li>データベースさえ一括にすればいい</li>
+</ul>
+</li>
+<li>元のアイデア: <a href="http://www.lifehacker.jp/2016/05/160527_lht_habitica.html" target="_blank" rel="external">ゲーム感覚で自分をレベルアップさせるタスク管理アプリ【今日のライフハックツール】 ｜ ライフハッカー［日本版］</a><ul>
+<li>ゲーミフィケーション?</li>
+<li>（ここまで凝らなくても）楽しく簡単にしたい</li>
+</ul>
+</li>
+<li>自分が管理ができるかどうかではなく、実際に操作を行う人達にメリットが有るかどうかが浸透の鍵に<ul>
+<li>日頃の業務が楽になるとか</li>
+</ul>
+</li>
+<li>Redmine以外のチケット・プロジェクト管理ツール<ul>
+<li><a href="https://trello.com/" target="_blank" rel="external">Trello</a></li>
+<li>チームの規模が大きくなると辛い</li>
+<li><a href="https://ja.atlassian.com/" target="_blank" rel="external">Atlassian</a> 製品<ul>
+<li>チケット管理: JIRAF</li>
+<li>その他の製品 (Confluence, BitBucketなど) と組み合わせると良いらしい</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="ドキュメンテーションの勉強会-Write-the-Docs-Kobe"><a href="#ドキュメンテーションの勉強会-Write-the-Docs-Kobe" class="headerlink" title="ドキュメンテーションの勉強会: Write the Docs Kobe"></a>ドキュメンテーションの勉強会: Write the Docs Kobe</h3><ul>
+<li><a href="https://workflowy.com/s/Exgx.Hfe8wnCTa2" target="_blank" rel="external">資料</a></li>
+<li><a href="http://www.writethedocs.org/" target="_blank" rel="external">Write the Docs 公式サイト</a></li>
+<li>みんなドキュメント書けよな！</li>
+<li>時期: 5月前半（予定）</li>
+<li>内容<ul>
+<li>作成ツールや文法作法なども</li>
+<li>3カ月ルールというのが存在</li>
+<li>参加者はみんなドキュメンタリアンw</li>
+</ul>
+</li>
+<li>Write the Docs Kobe で検索だ！<ul>
+<li>もうちょっと待ってください、すみません・・・（藤原）</li>
+<li>connpass的なものは後日作ります</li>
+</ul>
+</li>
+<li>第1回は、東洋文学の研究者の方にトークしてもらう予定<ul>
+<li>帳票書式（いわゆるExcel方眼紙）の歴史</li>
+</ul>
+</li>
+<li>(蛇足)Excel方眼紙からシステム…?<ul>
+<li><a href="https://www.forguncy.com/" target="_blank" rel="external">もしかして</a></li>
+</ul>
+</li>
+<li>興味ある人はチェック↓<ul>
+<li><a href="https://twitter.com/sky_y" target="_blank" rel="external">すかいゆき / 藤原惟(@sky_y)さん | Twitter</a></li>
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLScdXINuMSFlKFk9YClkDUtvZNaYFWVSiJyleYjtMVbIHqwJhA/viewform" target="_blank" rel="external">仮事務所的なSlack: 日本Pandocユーザ会 (下記: 登録フォーム)</a><ul>
+<li>チャンネル: #write-the-docs</li>
+<li>ドキュメンテーション関連のニュースbotもあります</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Python-3系でAndroidアプリを開発したい"><a href="#Python-3系でAndroidアプリを開発したい" class="headerlink" title="Python 3系でAndroidアプリを開発したい"></a>Python 3系でAndroidアプリを開発したい</h3><ul>
+<li><p><a href="http://pygame.org/news" target="_blank" rel="external">pygameってのがあるらしい</a></p>
+</li>
+<li><p>iOSなら <a href="http://hitoriblog.com/?p=42145" target="_blank" rel="external">Pythonista</a>ってアプリが有りますよ</p>
+</li>
+</ul>
+<ul>
+<li>Androidアプリ用開発環境構築～PythonでのAndroidアプリ作成まで<pre><code>* http://qiita.com/satio_koibuti/items/69b08cd876e8847fe63f
+</code></pre></li>
+</ul>
+<h3 id="ゼロシンクライアントに適したハードウェア"><a href="#ゼロシンクライアントに適したハードウェア" class="headerlink" title="ゼロシンクライアントに適したハードウェア"></a>ゼロシンクライアントに適したハードウェア</h3><h3 id="ハッカーの侵入経路を知りたい"><a href="#ハッカーの侵入経路を知りたい" class="headerlink" title="ハッカーの侵入経路を知りたい"></a>ハッカーの侵入経路を知りたい</h3><ul>
+<li>Wordpressがハッキング被害にあった<ul>
+<li>URLが悪意のあるサイトに書き換えられていた</li>
+</ul>
+</li>
+<li>ログインされた形跡が見当たらなかった<ul>
+<li>いつ？誰が？どうやって被害にあった？</li>
+<li>脆弱性からの攻撃は、正規にログインしていないので、ログオン履歴などもない</li>
+<li>Wordpressの脆弱性が入力欄にある場合は、経路はその入力欄。</li>
+</ul>
+</li>
+<li>レンタルサーバー側からは、連絡するしか手段がない</li>
+<li>ちゃんとバージョンアップはこまめにやろう</li>
+<li>バックアップもちゃんとしよう</li>
+<li><a href="http://jvndb.jvn.jp/index.html" target="_blank" rel="external">脆弱性を逐一報告しているサイト</a></li>
+</ul>
+<h3 id="ネットワークの勉強方法"><a href="#ネットワークの勉強方法" class="headerlink" title="ネットワークの勉強方法"></a>ネットワークの勉強方法</h3><ul>
+<li>ラズパイを外部に公開してスマホで見たいがどうしよう</li>
+<li>どうやったら内部ネットワークのサーバーを外部からアクセスできるようになる？</li>
+<li>サーバーinラズパイを外部から見る</li>
+<li>ラズパイからデータを外部クラウドに上げて、それをスマホから見る</li>
+<li>まずラズパイにTeamViewerいれてみればええんじゃないかな</li>
+<li>Ref. <a href="https://ngrok.com/" target="_blank" rel="external">ngrok</a></li>
+<li>手前味噌ですが<a href="https://github.com/nmrmsys/qwh" target="_blank" rel="external">こんなのも</a></li>
+<li>Ref. <a href="https://www.teamviewer.com/ja/" target="_blank" rel="external">TeamViewer</a></li>
+<li>fail2ban</li>
+<li>とりあえずsshポート番号変えよう</li>
+<li>公開鍵認証</li>
+<li>外からつながないなら、sshを外部にポート番号を公開しない</li>
+<li><a href="http://www.42ch.net/~shutoff/" target="_blank" rel="external">うざい国からのアクセスを全て遮断</a></li>
+<li><a href="https://dogmap.jp/2011/05/12/vps-security/" target="_blank" rel="external">VPS 借りたら、せめてこれくらいはやっとけというセキュリティ設定</a></li>
+</ul>
+<h3 id="Ansibleの実行場所について"><a href="#Ansibleの実行場所について" class="headerlink" title="Ansibleの実行場所について"></a>Ansibleの実行場所について</h3><ul>
+<li>構成管理のソースをちゃんとプルする運用を厳守させなきゃ</li>
+<li>サーバー構成を変更できる人は１人に限定させる</li>
+<li>不特定多数の人間がサーバの構成を変更できる状況はジッサイキケン</li>
+<li>構成管理の構成管理大事</li>
+</ul>
+<hr>
+<h2 id="連絡事項（次回予定など）"><a href="#連絡事項（次回予定など）" class="headerlink" title="連絡事項（次回予定など）"></a>連絡事項（次回予定など）</h2><ul>
+<li>加古川IT系インフラ勉強会 2017.04<ul>
+<li>日時 2017/04/08 18:00 - 21:00</li>
+<li>場所 兵庫県加古川市加古川町中津５９９−１ 三島ビル 4F</li>
+</ul>
+</li>
+<li>姫路IT系勉強会 2017.04<ul>
+<li>日時 2017/04/15 13:30 - 17:00</li>
+<li>場所 獨協大学　サテライト教室</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;開催日：2017/03/18&lt;/li&gt;
+&lt;li&gt;司会：&lt;/li&gt;
+&lt;li&gt;参加者数：参加者: 13名 / 学生: 3名 / Hangout: 0名&lt;/li&gt;
+&lt;li&gt;備考：ご自由にご記入ください！！&lt;/li&gt;
+&lt;li&gt;URL：&lt;a href=&quot;https://h
+    
+    </summary>
+    
+      <category term="開催履歴" scheme="https://histudy.github.io/categories/%E9%96%8B%E5%82%AC%E5%B1%A5%E6%AD%B4/"/>
+    
+    
+      <category term="姫路IT系勉強会" scheme="https://histudy.github.io/tags/%E5%A7%AB%E8%B7%AFIT%E7%B3%BB%E5%8B%89%E5%BC%B7%E4%BC%9A/"/>
+    
+  </entry>
+  
+</feed>
